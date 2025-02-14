@@ -48,7 +48,7 @@ The first row of the data was used as headers using the option *Use First Row as
 In Power BI, I used Visualizations to create a dashboard as shown in the figure below. 
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/Sales Analysis Project/Sales Analysis Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Sales%20Analysis/Sales%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Sales Analysis Dashboard</figcaption>
 </figure>
 <br/><br/>

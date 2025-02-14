@@ -127,7 +127,7 @@ To complete this step, 1 to many relationships were created between the four tab
 * The IATA_CODE column from the airports table connected to the ORIGIN_AIRPORT column in the flights table
 The following figure shows the relationships created.
 <figure>
-  <img src="https://github.com/Songonge/CognoRise-Infotech/blob/main/Flights Analysis Project/Relationship.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Relationship.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Relationships between tables</figcaption>
 </figure>
 <br/><br/>
@@ -165,7 +165,7 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
 2. Designed a dashboard by combining the charts all together. The dashboard is shown in the following figure.
 
 <figure>
-  <img src="https://github.com/Songonge/CognoRise-Infotech/blob/main/Flights Analysis Project/Flights Analysis Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flights%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Flight Delays and Cancellations Analysis Dashboard</figcaption>
 </figure>
 <br/><br/>

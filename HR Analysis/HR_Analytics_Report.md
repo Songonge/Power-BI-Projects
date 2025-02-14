@@ -48,7 +48,7 @@ The first row of the data was used as headers using the option Use First Row as 
 In Power BI, I used Visualizations to create five dashboards. The first dashboard about **HR Attrition** provides an overview of all four dashboards I created. This is shown in Figure 1.
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/HR Analytics Project/HR Attrition - Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/HR%20Attrition%20-%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure 1: HR Attrition Dashboard</figcaption>
 </figure>
 <br/><br/>
@@ -62,7 +62,7 @@ Summing all the 1s gave the total of 237 attrition count. Then, subtracting this
 4.	I used groups to aggregate certain values together to form meaningful subsets. These were done for Age (18-30, 31-45, 46-60), Work-Life Balance (1 as "Bad", 2 as "Average", 3 as "Good", and 4 as "Excellent"), and Distance From Home (1-10 as “Near-by”, 11-20 as “Far” and 21 – 29 as “Very far”).
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/HR Analytics Project/Demographic - Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Demographic%20-%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure 2: Demographics Dashboard</figcaption>
 </figure>
 <br/><br/>
@@ -76,7 +76,7 @@ The third and fourth dashboards about Turnover Analysis I and II contain details
 5.	Created a Treemap for Total attrition by job role counting the total number of “Yes” attritions for each category.
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/HR Analytics Project/Turnover Analysis 1 - Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%201%20-%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure 3: Turnover Analysis I Dashboard</figcaption>
 </figure>
 <br/><br/>
@@ -90,7 +90,7 @@ The fourth dashboard about Turnover Analysis II contains additional details abou
 5.	Created a line chart for monthly income and attrition by job role.
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/HR Analytics Project/Turnover Analysis 2 - Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%202%20-%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure 3: Turnover Analysis II Dashboard</figcaption>
 </figure>
 <br/><br/>
@@ -104,7 +104,7 @@ The fifth dashboard about Employee Wellness focuses on employee satisfaction reg
 5.	Created a pie chart for total attrition by work-life balance. Note that on the work-life balance, 1 represents "Bad", 2 stands for "Average", 3 signifies "Good", and 4 indicates "Excellent".
 
 <figure>
-  <img src="https://github.com/Songonge/MeriSKILL/blob/main/HR Analytics Project/Employee Wellness - Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Employee%20Wellness%20-%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure 3: Employee Wellness Dashboard</figcaption>
 </figure>
 <br/><br/>

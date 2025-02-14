@@ -98,7 +98,7 @@ Power Query was used to clean and transform the data. To complete this process, 
 4. After creating all the charts, I combined them in a dashboard as shown in Figure 1.
 
 <figure>
-  <img src="https://github.com/Songonge/CognoRise-Infotech/blob/main/Spotify Project/Spotify Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Spotify%20Songs%20Analysis%202023/Spotify%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Spotify Songs Analysis 2023 Dashboard</figcaption>
 </figure>
 <br/><br/>

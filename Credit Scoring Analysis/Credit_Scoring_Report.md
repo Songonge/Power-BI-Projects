@@ -178,7 +178,7 @@ Risk Category =  IF(Project1[CreditAmount] > 5000, "High Risk", "Low Risk")
 * Used slicers for sex, housing, credit risk, and risk categories to make the dashboard interactive.
 
 <figure>
-  <img src="https://github.com/Songonge/Data-Analytics-Projects/blob/main/All%20Projects/Credit%20Scoring/Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Credit%20Scoring%20Analysis/Credit%20Scoring%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Credit Scoring Analysis Dashboard</figcaption>
 </figure>
 <br/><br/>

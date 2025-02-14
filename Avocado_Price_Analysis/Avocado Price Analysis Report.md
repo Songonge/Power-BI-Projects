@@ -35,7 +35,7 @@ In Power BI, I used Visualizations to create a dashboard as shown in Figure 1. I
 
 The figure below shows the dashboard which was built based on the analysis of the data. 
 <figure>
-  <img src="https://github.com/Songonge/Data-Analytics-Projects/blob/main/All Projects/Avocado Price Analysis/Avocado Analysis Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Avocado_Price_Analysis/Avocado%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Avocado Price Analysis Dashboard</figcaption>
 </figure>
 <br/><br/>

@@ -1,4 +1,4 @@
-# Project: Sales Analysis in some Cities in the United States
+# Project: Sales Analysis by Product
 
 ## Table of Contents  
 1. [Introduction](#introduction)

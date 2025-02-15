@@ -103,6 +103,8 @@ Power Query was used to clean and transform the data. To complete this process, 
 </figure>
 <br/><br/>
 
+Here is the link to the [Interactive dashboard](https://app.powerbi.com/groups/me/reports/f6d80bc0-bd11-4a4b-8952-7720f4a29503/90fecee730968d208eda?ctid=92454335-564e-4ccf-b0b0-24445b8c03f7&experience=power-bi)
+
 ## Data Interpretation
 1. **Top Artists**
    * Artists such as Taylor Swift, The Weeknd, Ed Sheeran, Bad Bunny, and Harry Styles are key figures in terms of streaming numbers and playlist inclusions.

@@ -54,11 +54,18 @@ In Power BI, I used Visualizations to create five dashboards. The first dashboar
 <br/><br/>
 
 ### Demographics Dashboard
-The second dashboard about Demographics summarizes employee statistics is shown in Figure 2. The following steps were performed. 
+The second dashboard about Demographics summarizes employee statistics, is shown in Figure 2. The following steps were performed. 
 1.	I calculated the total number of employees.
 2.	I created a clustered bar chart for total attrition by the education field.
-3.	I used the formula `Attrition Count=SWITCH(true(),‘HR-Employee-Attrition’ [Attrition]=“Yes”,1,‘HR-Employee-Attrition’[Attrition]=“No”,0,0)`
-Summing all the 1s gave the total of 237 attrition count. Then, subtracting this number from the employee count using the formula `AE=SUM(‘HR-Employee-Attrition’ [EMployeeCount])- SUM(‘HR-Employee-Attrition’ [Attrition Count])` This gave `1233` as the count of active employees.
+3.	I used the formula
+```
+Attrition Count=SWITCH(true(),‘HR-Employee-Attrition’ [Attrition]=“Yes”,1,‘HR-Employee-Attrition’[Attrition]=“No”,0,0)
+```
+Summing all the 1s gave a total of 237 attrition count. Then, subtracting this number from the employee count using the formula 
+```
+AE=SUM(‘HR-Employee-Attrition’ [EMployeeCount])- SUM(‘HR-Employee-Attrition’ [Attrition Count])
+```
+This gave `1233` as the count of active employees.  
 4.	I used groups to aggregate certain values together to form meaningful subsets. These were done for Age (18-30, 31-45, 46-60), Work-Life Balance (1 as "Bad", 2 as "Average", 3 as "Good", and 4 as "Excellent"), and Distance From Home (1-10 as “Near-by”, 11-20 as “Far” and 21 – 29 as “Very far”).
 
 <figure>
@@ -69,10 +76,10 @@ Summing all the 1s gave the total of 237 attrition count. Then, subtracting this
 
 ### Turnover Analysis I Dashboard
 The third and fourth dashboards about Turnover Analysis I and II contain details about employee attrition. The steps below were performed:
-1.	Created a stacked bar chart for Total attrition by job role distinguishing males and females.
+1.	Created a stacked bar chart for Total attrition by job role, distinguishing males and females.
 2.	Created a stacked column chart for Total attrition by business travel.
 3.	Created a donut chart for Total attrition by the department.
-4.	Created a stacked column chart for Total attrition by years in current role.
+4.	Created a stacked column chart for Total attrition by years in the current role.
 5.	Created a Treemap for Total attrition by job role counting the total number of “Yes” attritions for each category.
 
 <figure>
@@ -96,7 +103,7 @@ The fourth dashboard about Turnover Analysis II contains additional details abou
 <br/><br/>
 
 ### Employee Wellness Dashboard
-The fifth dashboard about Employee Wellness focuses on employee satisfaction regarding several factors. Figure 5 presents the dashboard which was built following the steps below:
+The fifth dashboard about Employee Wellness focuses on employee satisfaction regarding several factors. Figure 5 presents the dashboard, which was built following the steps below:
 1.	Created a clustered column chart for Total attrition by environmental satisfaction. Note that Environmental satisfaction was rated on a scale ranging from 1 to 4 (1 for "Very Dissatisfied," 2 for "Dissatisfied," 3 for "Satisfied," and 4 for "Very Satisfied").
 2.	Created a clustered bar chart for Total attrition by job involvement. The job involvement was also grouped (1 for "Very Low," 2 for "Low," 3 for "Moderate," and 4 for "High").
 3.	Created two clustered column charts for Total attrition by job satisfaction and by relationship satisfaction. Both fields were also rated: 1 for "Very Dissatisfied," 2 for "Dissatisfied," 3 for "Satisfied," and 4 for "Very Satisfied".
@@ -114,18 +121,18 @@ The fifth dashboard about Employee Wellness focuses on employee satisfaction reg
 
 ## Interpretation of Data
 The following insights were derived from the data analysis:
-*	Many employees traveled rarely.
+*	Many employees rarely traveled.
 *	There was a correlation between the hourly rate and the daily rate.
-*	Concerning environmental satisfaction, employees living nearby accounted for the majority. These employees were also seen as more active and traveled rarely. On the other hand, Entry Level and Junior or Associate employees were noticeably satisfied with the environment and were mostly males.
+*	Concerning environmental satisfaction, employees living nearby accounted for the majority. These employees were also seen as more active and rarely traveled. On the other hand, Entry-level and Junior or Associate employees were noticeably satisfied with the environment and were mostly males.
 *	 Most of the jobs involvement fell under the Research & Development category. 
-*	The majority of employees were between 31-45 years old.
+*	The majority of employees were between 31 and 45 years old.
 *	Most employees who rated “Good” for Work-Life Balance were female.
 
 ## Recommendations
 Based on the insights from the HR analysis report, here are several recommendations I derived to address the identified trends and enhance employee satisfaction and organizational efficiency:
-*	Since many employees traveled rarely and those living nearby were more active, the organization should consider expanding flexible remote work options to improve work-life balance and reduce commuting stress.
+*	Since many employees rarely traveled and those living nearby were more active, the organization should consider expanding flexible remote work options to improve work-life balance and reduce commuting stress.
 *	Promote initiatives that encourage local engagement and activities for employees who live nearby, as this group shows higher activity levels and environmental satisfaction. 
-*	The correlation between hourly rate and daily rate suggests a need to review the compensation structure to ensure fairness and competitiveness. Implementing a transparent and equitable pay scale could help in retaining talent and boosting morale.
+*	The correlation between the hourly rate and the daily rate suggests a need to review the compensation structure to ensure fairness and competitiveness. Implementing a transparent and equitable pay scale could help in retaining talent and boosting morale.
 *	Entry-level and Junior/Associate employees, who are predominantly male, are notably satisfied with the environment. Therefore, consider implementing more targeted improvements in workplace facilities and amenities to maintain or enhance this satisfaction across other employee groups as well. 
 *	Given that most females rated "Good" for work-life balance, ensure inclusivity by creating programs that support all employees' needs, such as gender-neutral parental leave policies and flexible scheduling. In addition, continue to develop and promote work-life balance initiatives, such as flexible work hours, remote working options, and wellness programs, to sustain and improve overall employee satisfaction.
 *	With most job involvement in Research & Development, offering specialized training and professional development opportunities in this area can enhance skills and keep employees engaged. 

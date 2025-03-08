@@ -137,8 +137,8 @@ Based on the insights from the HR analysis report, here are several recommendati
 *	Given that most females rated "Good" for work-life balance, ensure inclusivity by creating programs that support all employees' needs, such as gender-neutral parental leave policies and flexible scheduling. In addition, continue to develop and promote work-life balance initiatives, such as flexible work hours, remote working options, and wellness programs, to sustain and improve overall employee satisfaction.
 *	With most job involvement in Research & Development, offering specialized training and professional development opportunities in this area can enhance skills and keep employees engaged. 
 *	Implement recognition programs to reward and acknowledge contributions to Research & Development, fostering a culture of innovation and dedication. 
-*	The majority of employees being between 31-45 years old suggests a need for wellness programs tailored to this age group, focusing on physical health, mental well-being, and career progression. 
-*	Provide clear career advancement pathways and mentorship programs to support employees in this age bracket in achieving their professional goals and maintaining high levels of job satisfaction.
+*	The majority of employees being between 31 and 45 years old suggests a need for wellness programs tailored to this age group, focusing on physical health, mental well-being, and career progression. 
+*	Provide clear career advancement pathways and mentorship programs to support employees between 31 and 45 years old in achieving their professional goals and maintaining high levels of job satisfaction.
 
 By implementing these recommendations, the organization can address key insights from the HR analysis, leading to a more satisfied, efficient, and productive workforce.
 

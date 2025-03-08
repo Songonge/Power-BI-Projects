@@ -35,12 +35,12 @@ MeriSKILL provided the dataset. I downloaded it from Google Drive. Then, I uploa
 
 ## Data Cleaning and Transformation 
 The first row of the data was used as headers using the option Use First Row as Headers under the Home tab. Then, using the Transform tab, I selected Detect Data Type to automatically identify the data type of each column and convert them where needed. Next, I  
-•	Deleted redundant columns: This reduced the columns to 26.
-•	Renamed the columns appropriately.
-•	Deleted null and duplicate values.
-•	Cleaned individual columns.
-•	Removed the NaN (Not a Number) values from the dataset.
-•	Checked for some more Transformations to ensure the remaining data was ready for analysis.
+* Deleted redundant columns: This reduced the columns to 26.
+*	Renamed the columns appropriately.
+*	Deleted null and duplicate values.
+*	Cleaned individual columns.
+*	Removed the NaN (Not a Number) values from the dataset.
+*	Checked for some more Transformations to ensure the remaining data was ready for analysis.
 
 ## Data Analysis and Visualization
 

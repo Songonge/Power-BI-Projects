@@ -18,7 +18,7 @@
 
 
 ## Introduction
-Every day, data is generated about flights including airport names, departure and arrival airports, flight status, etc. It is interesting to analyze the data generated through those processes to understand how customers can be better satisfied.  
+Daily data about flights includes airport names, departure and arrival airports, flight status, etc. It is interesting to analyze the data generated through those processes to understand how customers can be better satisfied.  
 This project focuses on analyzing flight status based on data collected from different airports during the year 2015. The project was completed during my internship at CognoRise Infotech.
 
 ### Business Overview or Problem
@@ -33,7 +33,7 @@ The key obstacles involving technical and regulatory challenges could include:
 The rationale behind the flight delays and cancellations analysis project is to provide operational and customer-focused perspectives to enhance data-driven decisions for better customer satisfaction.
 Here is a list of rationales for this project:
 1. **Improve Operational Efficiency**: Identifying patterns in delays and cancellations will help airlines and airports optimize flight schedules and reduce downtime.
-2. **Enhance Customer Satisfaction**: By minimizing delays and proactively managing cancellations, airlines can improve customer experience and retain loyalty.
+2. **Enhance Customer Satisfaction**: Airlines can improve customer experience and retain loyalty by minimizing delays and proactively managing cancellations.
 3. **Cost Reduction**: Analyzing the root causes of delays allows airlines to reduce fuel, staffing, and compensation costs associated with prolonged delays or unexpected cancellations.
 4. **Predictive Capabilities**: Leveraging historical data for predictive analytics can help airlines anticipate delays and cancellations, allowing for proactive communication with passengers and resource allocation.
 5. **Weather Impact Analysis**: Identifying the impact of weather conditions on flight schedules allows airlines and airports to take preventive measures, reducing weather-related disruptions.
@@ -86,12 +86,12 @@ The dataset used in this project was downloaded from Kaggle. It was made of thre
    * *DEPARTURE_TIME*: Obtained from WHEELS_OFF - TAXI_OUT
    * *DEPARTURE_DELAY*: Total Delay on Departure
    * *TAXI_OUT*: The time duration elapsed between departure from the origin airport gate and wheels off
-   * *WHEELS_OFF*: The time point that the aircraft's wheels leave the ground
+   * *WHEELS_OFF*: The time point at which the aircraft's wheels leave the ground
    * *SCHEDULED_TIME*: Planned time amount needed for the flight trip
    * *ELAPSED_TIME*: Obtained from AIR_TIME+TAXI_IN+TAXI_OUT
    * *AIR_TIME*: The time duration between wheels_off and wheels_on time
    * *DISTANCE*: Distance between two airports
-   * *WHEELS_ON*: The time point that the aircraft's wheels touch on the ground
+   * *WHEELS_ON*: The time point at which the aircraft's wheels touch the ground
    * *TAXI_IN* The time duration elapsed between wheels-on and gate arrival at the destination airport
    * *SCHEDULED_ARRIVAL*: Planned arrival time
    * *ARRIVAL_TIME*: WHEELS_ON+TAXI_IN
@@ -99,15 +99,15 @@ The dataset used in this project was downloaded from Kaggle. It was made of thre
    * *DIVERTED*: Aircraft landed at an airport that was out of schedule
    * *CANCELED*: Flight Cancelled (1 = cancelled)
    * *CANCELLATION_REASON*: Reason for Cancellation of flight: A - Airline/Carrier; B - Weather; C - National Air System; D - Security
-   * *AIR_SYSTEM_DELAY*: Delay caused by air system
+   * *AIR_SYSTEM_DELAY*: Delay caused by the air system
    * *SECURITY_DELAY*: Delay caused by security
    * *AIRLINE_DELAY*: Delay caused by the airline
    * *LATE_AIRCRAFT_DELAY*: Delay caused by aircraft
    * *WEATHER_DELAY*: Delay caused by weather
 
 ### Data Cleaning and Transformation
-The data was loaded in Power BI using the Get Data feature. Then, using Power Query the data was cleaned and transformed. To complete this process, I
-1. For the airlines' table, the first row was promoted as Header
+The data was loaded in Power BI using the Get Data feature. Then, using Power Query, the data was cleaned and transformed. To complete this process, I
+1. For the airlines' table, the first row was promoted as a Header
 2. For the airports' table, the data was left as is
 3. For the flights' table:
    * 22 columns were removed
@@ -115,14 +115,14 @@ The data was loaded in Power BI using the Get Data feature. Then, using Power Qu
      * `If CANCELED equals 1 Then Canceled`
      * `Else If DEPARURE_DALAY is greater than 0 Then Delayed`
      * `Else On-Time`
-   * The column named *CANCELLATION_REASON* was used to create another table. This table, named *cancellation_codes* was designed with two columns and 5 columns including headers and defined as follows:
+   * The column named *CANCELLATION_REASON* was used to create another table. This table, named *cancellation_codes*, was designed with two columns and 5 columns, including headers, and defined as follows:
      * *CANCELLATION_REASON*: Reason the flight was canceled
      * *CANCELLATION_DESCRIPTION*: Description for flight cancellation
    * Overall, the flights' table was transformed into 10 columns.
 
 ## Step 2: Building a Relational Model Between Tables
 To complete this step, 1 to many relationships were created between the four tables.
-* The IATA_CODE column from the airlines' table connected to the AIRLINE column in the flights' table
+* The IATA_CODE column from the airlines' table is connected to the AIRLINE column in the flights' table
 * The CANCELLATION_REASON column from the airlines cancellation_codes table to the CANCELLATION_REASON column in the flights table
 * The IATA_CODE column from the airports table connected to the ORIGIN_AIRPORT column in the flights table
 The following figure shows the relationships created.
@@ -134,19 +134,19 @@ The following figure shows the relationships created.
 
 ## Step 3: Adding Data Analysis Expression (DAX) Measures to the tables
 DAX measures were used to define custom calculations. This was to enhance my data model and create new metrics to support my analysis.  The following new measures were calculated.
-1. **Total Flights**: The total amount of flights defined as
+1. **Total Flights**: The total number of flights is defined as
 `Total Flights = COUNTROWS(flights)`
-2. The Total Amount of flights given a status
-   * **Canceled Flights**: The total amount of canceled flights defined as
+2. The Total number of flights given a status
+   * **Canceled Flights**: The total amount of canceled flights is defined as
 `Canceled Flights = CALCULATE([Total Flights], flights[STATUS] = "Canceled")`
-   * **Delayed Flights**: The total amount of delayed flights defined as
+   * **Delayed Flights**: The total amount of delayed flights is defined as
 `Delayed Flights = CALCULATE([Total Flights], flights[STATUS] = "Delayed")`
-   * **On-Time Flights**: The total amount of On-Time flights defined as
+   * **On-Time Flights**: The total amount of On-Time flights is defined as
 `On-Time Flights = CALCULATE([Total Flights], flights[STATUS] = "On-Time")`
 3. The percentage of flights given a status
-   * **% Canceled**: The percentage of canceled flights defined as
+   * **% Canceled**: The percentage of canceled flights is defined as
 `Canceled Flights = DIVIDE([Canceled Flights], [Total Flights], "-")`
-   * **% Delayed**: The percentage of delayed flights defined as
+   * **% Delayed**: The percentage of delayed flights is defined as
 `Delayed Flights = DIVIDE([Delayed Flights], [Total Flights], "-")`
    * **% On-Time**: The percentage of On-Time flights defined as
 `On-Time Flights = DIVIDE([On-Time Flights], [Total Flights], "-")`
@@ -170,27 +170,26 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
 </figure>
 <br/><br/>
 
-![Figure: Flight Delays and Cancellations Analysis Dashboard](https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flights%20Analysis%20Dashboard.png)
 
 ## Data Interpretation
 1. **Delayed Flights**
    * Out of 6 million total flights, 2 million (36%) were delayed.
    * Out of the total of more than 6 million flights, 2 million flights were delayed.
-   * Southwest Airlines Co. was the leading airline with a huge number of delayed flights (566.6K) followed by Delta Air Lines (282.4K) and United Airlines (256.2K).
+   * Southwest Airlines Co. was the leading airline with a huge number of delayed flights (566.6K), followed by Delta Air Lines (282.4K) and United Airlines (256.2K).
 
 2. **Canceled Flights**
    * Out of the total of 6 million flights, 90 thousand (2%) were canceled.
-   * The primary cause of flight cancellations was weather (54.3%), followed by airline/carrier-related issues (28.1%), national air system problems (17.5%), and security reasons (minor percentage).
-   * Southwest Airlines Co. was the leading airline with a maximum number of canceled flights (16K) followed by Atlantic Southeast Airlines (15.2K) and American Eagle Airlines (15K).
+   * The primary cause of flight cancellations was weather (54.3%), followed by airline/carrier-related issues (28.1%), national air system problems (17.5%), and security reasons (a minor percentage).
+   * Southwest Airlines Co. was the leading airline with the maximum number of canceled flights (16K), followed by Atlantic Southeast Airlines (15.2K) and American Eagle Airlines (15K).
 3. **On-Time Flights**
    * Out of the total of 6 million flights, 4 million (62%) were on time.
-   * Chicago is the leading city with the maximum number of flights (366.8K) followed by Atlanta (346.8K) and Dallas-Fort Worth (239.6K)
+   * Chicago is the leading city with the maximum number of flights (366.8K), followed by Atlanta (346.8K) and Dallas-Fort Worth (239.6K)
    * Saturday was the day with the maximum of On-Time flights whereas Monday was the day with fewer On-Time flights.
 4. **Cancellation by Day**
-   * Flight cancellations peaked on Monday (2.6%) followed by Tuesday (1.9%) and Sunday (1.7%).
-   * Flight cancellations were lowest on Friday 4 (1.1%) followed by Wednesday and Saturday (1.3%).
+   * Flight cancellations peaked on Monday (2.6%), followed by Tuesday (1.9%) and Sunday (1.7%).
+   * Flight cancellations were lowest on Friday, 4 (1.1%), followed by Wednesday and Saturday (1.3%).
 5. **Delays by Day**
-   * The percentage of delayed flights ranged between 34% to 38%, with day Saturday showing the lowest delay percentage and day Thursday showing the highest delay percentage.
+   * The percentage of delayed flights ranged between 34% to 38%, with Saturday showing the lowest delay percentage and Thursday showing the highest delay percentage.
 6. **Cancellations and Delays by Airport**
    * Hartsfield-Jackson Atlanta, Chicago O'Hare, and Dallas International Airports were among the hardest-hit cities by both cancellations and delays.
    * Gustavus, King Salmon, and Ithaca Tompkins Regional airports were those with the lowest canceled and delayed flights.

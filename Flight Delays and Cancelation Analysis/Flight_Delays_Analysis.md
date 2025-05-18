@@ -170,7 +170,7 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
 </figure>
 <br/><br/>
 
-![Figure: Flight Delays and Cancellations Analysis Dashboard](ttps://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flights%20Analysis%20Dashboard.png)
+![Figure: Flight Delays and Cancellations Analysis Dashboard](https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flights%20Analysis%20Dashboard.png)
 
 ## Data Interpretation
 1. **Delayed Flights**

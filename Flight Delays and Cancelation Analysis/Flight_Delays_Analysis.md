@@ -160,12 +160,12 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
    * A Line chart to show both canceled and delayed flights by airport
    * Line charts to show total flights by month for On-Time, Delayed, and Canceled
    * A donut chart to show canceled flights for different cancellation reasons
-   * Column charts to show total flights by the percentage of Ontime by day; delayed flights by the percentage of delayed by day, and canceled flights by the percentage of canceled by day.
+   * Column charts to show total flights by the percentage of Ontime by day, delayed flights by the percentage of delayed by day, and canceled flights by the percentage of canceled by day.
    * A Stacked Bar chart to show the percentage of flights by status.
-2. Designed a dashboard by combining the charts all together. The dashboard is shown in the following figure.
+2. Designed a dashboard by combining all the charts. The dashboard is shown in the following figure.
 
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flights%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flight%20Analysis.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Flight Delays and Cancellations Analysis Dashboard</figcaption>
 </figure>
 <br/><br/>
@@ -184,7 +184,7 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
 3. **On-Time Flights**
    * Out of the total of 6 million flights, 4 million (62%) were on time.
    * Chicago is the leading city with the maximum number of flights (366.8K), followed by Atlanta (346.8K) and Dallas-Fort Worth (239.6K)
-   * Saturday was the day with the maximum of On-Time flights whereas Monday was the day with fewer On-Time flights.
+   * Saturday was the day with the maximum number of On-Time flights, whereas Monday was the day with the fewest On-Time flights.
 4. **Cancellation by Day**
    * Flight cancellations peaked on Monday (2.6%), followed by Tuesday (1.9%) and Sunday (1.7%).
    * Flight cancellations were lowest on Friday, 4 (1.1%), followed by Wednesday and Saturday (1.3%).
@@ -215,7 +215,7 @@ The following recommendations are provided to help airlines and airports enhance
    
 **Thank you for taking the time to read this report!**
 
-**Please reach out for any updates.**
+**Please reach out for any feedback.**
 
 ### Author
 [Edwige Songong](https://github.com/Songonge)

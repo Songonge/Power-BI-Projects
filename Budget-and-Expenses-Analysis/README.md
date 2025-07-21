@@ -29,6 +29,11 @@ This report delves into the insights derived from the data visualization, identi
 * Highlight growth and challenges.
 * Provide actionable insights.
 
+<figure>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Relationship.png" width=100% height=100% alt="alt text">
+  <figcaption>Figure: Relationships between tables</figcaption>
+</figure>
+<br/><br/>
 
 ## Steps to Complete this Project
 The following steps were completed:  
@@ -36,7 +41,7 @@ The following steps were completed:
 * Clean and transform the data to prepare it for analysis.
 * Import the cleaned dataset to Power BI to perform the analysis.
 * Provide an overall budget analysis from the data.
-* Provide overall expenses analysis from the data.
+* Provide an overall expenses analysis from the data.
 * Analyze the project performance for each project in the data.
 * Build an interactive dashboard to communicate insights from the analysis.
 * Provide recommendations for best decision-making.

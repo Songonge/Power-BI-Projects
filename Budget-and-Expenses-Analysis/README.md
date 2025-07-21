@@ -30,8 +30,8 @@ This report delves into the insights derived from the data visualization, identi
 * Provide actionable insights.
 
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Relationship.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Relationships between tables</figcaption>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.jpg" width=100% height=100% alt="alt text">
+  <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption>
 </figure>
 <br/><br/>
 

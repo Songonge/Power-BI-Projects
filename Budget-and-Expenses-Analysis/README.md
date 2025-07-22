@@ -49,8 +49,8 @@ The following steps were completed:
 
 ## Required Tools for this Project 
 The following tools were used:  
-* Microsoft SQL Server to clean and prepare the data. 
-* Power BI to analyze the data and build the dashboard.
+* Microsoft SQL Server to clean and prepare the data. Use this [link](https://github.com/Songonge/SQL-Projects/blob/main/DataCleaning_TechSolutions.md) to get all the details.
+* Power BI to analyze the data and build the dashboard. Use this [link](https://app.powerbi.com/view?r=eyJrIjoiMzgyZWI3ZTctYzk0Ni00Mzg1LWIzNGUtNzA3ODNhZWJiMzlmIiwidCI6IjJhNzA3NDU3LWM0M2QtNDE1Ni05MGViLWVkOTZhNWEzNTRlMCIsImMiOjJ9) to interact with the dashboard live.
 
 
 ## Conclusion

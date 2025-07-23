@@ -100,15 +100,23 @@ Impressions = SUM('Engagement'[Impressions])
 
 * Previous Month Impression
 ```
-PM Impressions = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCULATE([Impressions], PREVIOUSMONTH('Date Table'[Date])))
+PM Impressions = IF(
+  SELECTEDVALUE(
+    'Date Table'[Month]) = BLANK(), 
+    BLANK(),
+    CALCULATE([Impressions], PREVIOUSMONTH('Date Table'[Date])))
 ```
 
 * Month on Month Impression
 ```
 MoM% Impressions = 
-VAR a = DIVIDE([Impressions], [PM Impressions]) - 1
-VAR b = FORMAT(a, "#0.0%")
-RETURN IF([PM Impressions] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
+  VAR a = DIVIDE([Impressions], [PM Impressions]) - 1
+  VAR b = FORMAT(a, "#0.0%")
+RETURN 
+  IF(
+    [PM Impressions] = BLANK(), 
+    BLANK(), 
+    IF(a > 0, "↑","↓") & " " & b)
 ```
 
 * Color coding for the Month-on-Month Impression
@@ -124,7 +132,10 @@ Followers = SUM('Engagement'[Followers])
 
 * Previous Month Followers
 ```
-PM Followers = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCULATE([Followers], PREVIOUSMONTH('Date Table'[Date])))
+PM Followers = IF(
+    SELECTEDVALUE('Date Table'[Month]) = BLANK(), 
+    BLANK(),
+    CALCULATE([Followers], PREVIOUSMONTH('Date Table'[Date])))
 ```
 
 * Month on Month Followers
@@ -132,7 +143,11 @@ PM Followers = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCULAT
 MoM% Followers = 
 VAR a = DIVIDE([Followers], [PM Imp]) - 1
 VAR b = FORMAT(a, "#0.0%")
-RETURN IF([PM Followers] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
+RETURN 
+  IF(
+    [PM Followers] = BLANK(), 
+    BLANK(), 
+    IF(a > 0, "↑","↓") & " " & b)
 ```
 
 * Color coding for the Month-on-Month Followers
@@ -148,7 +163,13 @@ Engagements = SUM('Engagement'[Engagements])
 
 * Previous Month Engagements
 ```
-PM Engagements = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCULATE([Engagements], PREVIOUSMONTH('Date Table'[Date])))
+PM Engagements = IF(
+    SELECTEDVALUE(
+      'Date Table'[Month]) = BLANK(), 
+      BLANK(),
+      CALCULATE([Engagements], PREVIOUSMONTH('Date Table'[Date])
+    )
+)
 ```
 
 * Month-on-Month Engagements
@@ -156,7 +177,11 @@ PM Engagements = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCUL
 MoM% Engagements = 
 VAR a = DIVIDE([Engagements], [PM Imp]) - 1
 VAR b = FORMAT(a, "#0.0%")
-RETURN IF([PM Engagements] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
+RETURN 
+  IF( 
+    [PM Engagements] = BLANK(), 
+    BLANK(), 
+    IF(a > 0, "↑","↓") & " " & b)
 ```
 
 * Color coding for the Month-on-Month Engagements
@@ -168,7 +193,7 @@ MoM% Color Engagements = IF([Engagements] < [PM Engagements], "#8d0801", "Green"
 This measure is needed so that when you select a month from the slicer, it highlights the column on the chart.
 ```
 color = IF(ISFILTERED('d') && 
-VALUES('Date Table'[Month]) IN VALUES('d'[Month]), "#3a86ff", "#cae9ff")
+    VALUES('Date Table'[Month]) IN VALUES('d'[Month]), "#3a86ff", "#cae9ff")
 ```
 
 

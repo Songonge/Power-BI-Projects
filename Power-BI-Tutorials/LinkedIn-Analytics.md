@@ -211,7 +211,7 @@ To create field parameters:
 **Yay! We are done!**
 Here is the Dashboard itself.
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Power-BI-Tutorials/6_Months_Analytics.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Power-BI-Tutorials/LinkedIn_6_Months_Analytics.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: 6-Month LinkedIn Analytics.</figcaption>
 </figure>
 <br/><br/>

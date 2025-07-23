@@ -71,7 +71,7 @@ Date Table = ADDCOLUMNS(
     "MonthNo", MONTH([Date])
 )
 ```
-When you are done, and **Mark it as a Date**.
+When you are done, **Mark it as a Date**.
 
 2. Create a disconnected table from the Date Table
 ```
@@ -111,7 +111,7 @@ VAR b = FORMAT(a, "#0.0%")
 RETURN IF([PM Impressions] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
 ```
 
-* Color coding for the Month on Month Impression
+* Color coding for the Month-on-Month Impression
 ```
 MoM% Color Impressions = IF([Impressions] < [PM Impressions], "#8d0801", "Green")
 ```
@@ -135,7 +135,7 @@ VAR b = FORMAT(a, "#0.0%")
 RETURN IF([PM Followers] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
 ```
 
-* Color coding for the Month on Month Followers
+* Color coding for the Month-on-Month Followers
 ```
 MoM% Color Followers = IF([Followers] < [PM Followers], "#8d0801", "Green")
 ```
@@ -151,7 +151,7 @@ Engagements = SUM('Engagement'[Engagements])
 PM Engagements = IF(SELECTEDVALUE('Date Table'[Month]) = BLANK(), BLANK(),CALCULATE([Engagements], PREVIOUSMONTH('Date Table'[Date])))
 ```
 
-* Month on Month Engagements
+* Month-on-Month Engagements
 ```
 MoM% Engagements = 
 VAR a = DIVIDE([Engagements], [PM Imp]) - 1
@@ -159,7 +159,7 @@ VAR b = FORMAT(a, "#0.0%")
 RETURN IF([PM Engagements] = BLANK(), BLANK(), IF(a > 0, "↑","↓") & " " & b)
 ```
 
-* Color coding for the Month on Month Engagements
+* Color coding for the Month-on-Month Engagements
 ```
 MoM% Color Engagements = IF([Engagements] < [PM Engagements], "#8d0801", "Green")
 ```
@@ -184,20 +184,20 @@ To create field parameters:
 
 
 ## Step 5: Design the Dashboard
-1. Create a Clustered column chart using:  
+1. Create a clustered column chart using:  
    * The Month field from the Date Table
    * The Parameter Field  
 
 2. Add slicers to the dashboard  
    * Add the **Month** slicer from the **Date Table**.
    * Add another **Month** slicer from the **Dist Table**. 
-   * Make it Single selection for each.
+   * Make it a Single selection for each.
    * Synchronize the two slicers.
    * Hide the slicer from the **Dist Table**.
    * Customize the color on the Clustered column chart using the color measure you created.
 
 > [!IMPORTANT]
-> You should off the interaction between the **Month** slicer from the **Date Table** and the Clustered column chart.
+> You should remove the interaction between the **Month** slicer from the **Date Table** and the Clustered column chart.
 
 3. Create A Card Visual
    * Use the Card (new) visual
@@ -209,11 +209,18 @@ To create field parameters:
 
 
 **Yay! We are done!**
+Here is the Dashboard itself.
+<figure>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Power-BI-Tutorials/6_Months_Analytics.png" width=100% height=100% alt="alt text">
+  <figcaption>Figure: 6-Month LinkedIn Analytics.</figcaption>
+</figure>
+<br/><br/>
+
 
 ## What you Should do Next
 * Share your design
 * Tag me in your post. Here is the link to my LinkedIn profile: [Link](https://www.linkedin.com/in/edwigesongong/)
-* Have any questions? Send me a message using any mean from my GitHub profile.
+* Have any questions? Send me a message using any means from my GitHub profile.
 
 
 ## Conclusion

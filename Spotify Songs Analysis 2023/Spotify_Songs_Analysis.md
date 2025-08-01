@@ -17,7 +17,8 @@
 ## Introduction 
 This project is the second one completed during my internship at CognoRise Infotech. The project provides an analysis of Spotify songs for the year 2023. The dataset includes famous songs listed on Spotify and describes each song's popularity and attributes on different music platforms.  
 
-The first part of this project, concerning **Data Cleaning**, was completed in PostgreSQL. Follow this [link](https://github.com/Songonge/SQL-Projects/blob/main/Spotify_Streams.md) for more details.
+The first part of this project, concerning **Data Cleaning**, was completed in PostgreSQL. Follow this [link](https://github.com/Songonge/SQL-Projects/blob/main/Spotify_Streams.md) for more details.  
+
 This project was completed in Power BI, where I designed an interactive dashboard to communicate insights from the analysis. 
 
 ### Business Overview or Problem

@@ -92,7 +92,7 @@ WHERE p1.SavingAccount = 'NA'
 **Output**: 183 rows were updated in the SavingAccount column.
 
 * To reduce the amount of NA in the CheckingAccount column, I filled rows with NA in the SavingAccount column with values in the SavingAccount column using the query below:
-```dax
+```sql
 UPDATE p1
 SET p1.CheckingAccount = p2.SavingAccount
 FROM [DataBeez].dbo.Project1 p1
@@ -135,7 +135,7 @@ After launching Power BI, I connected to the data as follows:
 ## Data Analysis in Power BI
 1. **Created DAX Measures for Analysis**  
    * *Total Male*
-```sql
+```dax
 Total Male = COUNTROWS(FILTER(Project1, Project1[Sex] = "male"))
 ```
    * *Total Female*

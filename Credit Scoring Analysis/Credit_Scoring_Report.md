@@ -135,7 +135,7 @@ After launching Power BI, I connected to the data as follows:
 ## Data Analysis in Power BI
 1. **Created DAX Measures for Analysis**  
    * *Total Male*
-```dax
+```sql
 Total Male = COUNTROWS(FILTER(Project1, Project1[Sex] = "male"))
 ```
    * *Total Female*

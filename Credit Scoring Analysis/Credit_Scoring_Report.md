@@ -1,6 +1,6 @@
 # Project: Credit Scoring Analysis
 
-## Table of Content
+## Table of Contents
 1. [Introduction](#introduction)
 2. [Project Description](#project-description)
 3. [About the Dataset](#About-the-dataset)
@@ -30,7 +30,7 @@ The project involves the analysis of credit scoring for the German Credit Data. 
 5. Create an interactive dashboard via Power BI or Looker Studio to visualize the model results.
 
 ## About the Dataset
-The dataset was downloaded from Kaggle using the link provided by the Recruitment Team. It contains 1000 entries with 20 categorial/symbolic attributes prepared by Prof. Hofmann. In this dataset, each entry represents a person who takes credit from a bank. Each person is classified as having good or bad credit risks according to the set of attributes.  
+The dataset was downloaded from Kaggle using the link provided by the Recruitment Team. It contains 1000 entries with 20 categorical/symbolic attributes prepared by Prof. Hofmann. In this dataset, each entry represents a person who takes credit from a bank. Each person is classified as having good or bad credit risk according to the set of attributes.  
 [Link to the dataset](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk?resource=download)
 
 The dataset was made of 1000 rows and 11 columns with demographic and financial information. The columns are described as follows:
@@ -38,9 +38,9 @@ The dataset was made of 1000 rows and 11 columns with demographic and financial 
 * *Sex*: The sex of the person asking for credit
 * *Job*: The job category of the person asking for credit
 * *Housing*: The status of the housing of the person asking for credit
-* *Saving accounts*: The saving account owned by the person asking for credit
+* *Saving accounts*: The savings account owned by the person asking for credit
 * *Checking account*: The checking account owned by the person asking for credit
-* *Credit amount*: The credit amount the person asking for credit
+* *Credit amount*: The credit amount the person is asking for credit
 * *Duration*: Duration of the credit in a month
 * *Purpose*: Purpose for the credit
 
@@ -60,25 +60,28 @@ In SQL Server, the following tasks were completed.
 ### Renamed Columns
 To rename columns for consistency, the queries below were executed.
 * Renamed the Saving accounts column to SavingAccount
-```
+```sql
 EXEC sp_rename 'dbo.Project1.[Saving accounts]', 'SavingAccount', 'COLUMN';
 ```
+
 * Renamed the Checking accounts column to CheckingAccount
-```
+```sql
 EXEC sp_rename 'dbo.Project1.[Checking account]', 'CheckingAccount', 'COLUMN';
 ```
+
 * Renamed the Credit amount column to CreditAmount
-```
+```sql
 EXEC sp_rename 'dbo.Project1.[Credit amount]', 'CreditAmount', 'COLUMN'; 
 ```
+
 * Renamed the Risk column to CreditRisk
-```
+```sql
 EXEC sp_rename 'dbo.Project1.Risk', 'CreditRisk', 'COLUMN';
 ```
 
 ### Replaced NA in some Columns 
 * To reduce the amount of NA in the SavingAccount column, I filled rows with NA in the SavingAccount column with values in the CheckingAccount column using the query below:
-```
+```sql
 UPDATE p1
 SET p1.SavingAccount = p2.CheckingAccount
 FROM [DataBeez].dbo.Project1 p1
@@ -89,7 +92,7 @@ WHERE p1.SavingAccount = 'NA'
 **Output**: 183 rows were updated in the SavingAccount column.
 
 * To reduce the amount of NA in the CheckingAccount column, I filled rows with NA in the SavingAccount column with values in the SavingAccount column using the query below:
-```
+```sql
 UPDATE p1
 SET p1.CheckingAccount = p2.SavingAccount
 FROM [DataBeez].dbo.Project1 p1
@@ -99,9 +102,9 @@ WHERE p1.CheckingAccount = 'NA';
 ```
 **Output**: 183 rows were updated in the CheckingAccount column.
 
-### Checked and Deleted NA values  
+### Checked and Deleted NA Values  
 * Checked rows with NA in both the SavingAccount and the CheckingAccount columns.
-```
+```sql
 SELECT *
 FROM [DataBeez].dbo.Project1
 WHERE SavingAccount = 'NA' AND CheckingAccount = 'NA';  
@@ -109,63 +112,63 @@ WHERE SavingAccount = 'NA' AND CheckingAccount = 'NA';
 Output:  99 rows
 
 * Deleted rows with NA in the SavingAccount and CheckingAccount columns.
-```
+```sql
 DELETE FROM [DataBeez].dbo.Project1
 WHERE SavingAccount = 'NA' AND CheckingAccount = 'NA';  
 ```
 Output: 99 rows were deleted 
 
 * Now, running the query below returned 901 rows.
-```
+```sql
 SELECT *
 FROM [DataBeez].dbo.Project1;
 ```
 
-## Importing the Cleaned Data to Power BI where to Analyse it  
+## Importing the Cleaned Data to Power BI to Analyse it  
 After launching Power BI, I connected to the data as follows:  
 * Clicked on Get Data under the Home tab within the Data group
 * Selected SQL Server from the list
 * Entered the Server name and the database name in each cell
-* Clicked on OK. This opened a popup window.
+* Clicked on OK. This opened a pop-up window.
 * Ticked on the table and clicked on Load. This loaded the data in Power BI.
 
 ## Data Analysis in Power BI
 1. **Created DAX Measures for Analysis**  
    * *Total Male*
-```
+```sql
 Total Male = COUNTROWS(FILTER(Project1, Project1[Sex] = "male"))
 ```
    * *Total Female*
-```
+```sql
 Total Female = COUNTROWS(FILTER(Project1, Project1[Sex] = "female"))
 ```
    * *Total Credit Amount*
-```
+```sql
 Total Credit Amount = SUM(Project1[CreditAmount])
 ```
    * *Average Credit Amount by Risk Level*
-```
+```sql
 Avg Credit Amount = AVERAGE(Project1[CreditAmount])
 ```
    * *Percentage of "Good" and "Bad" Risks*
-```
+```sql
 Good Credit Risk Percentage = DIVIDE(CALCULATE(COUNTROWS(Project1), Project1[Risk] = "good"), COUNTROWS(Project1), 0) 
 ```
-```
+```sql
 Bad Credit Risk Percentage = DIVIDE(CALCULATE(COUNTROWS(Project1), Project1[Risk] = "bad"), COUNTROWS(Project1), 0)
 ``` 
    * *Average Age*
-```
+```sql
 Average Age = AVERAGE(Project1[Age])
 ```
    * *Average Credit Duration*
-```
+```sql
 Average Credit Duration = AVERAGE(Project1[Duration])
 ```
 
 2. **Created a Calculated Column**  
 * Risk Classification based on Credit Amount
-```
+```sql
 Risk Category =  IF(Project1[CreditAmount] > 5000, "High Risk", "Low Risk")
 ```
 
@@ -220,11 +223,11 @@ Here is the [Link to the Interactive Dashboard](https://app.powerbi.com/groups/m
    * For the 20-40 age group, offer shorter-duration loan products to reduce repayment risks.  
    * Monitor repayment patterns on loans exceeding 40 months.
 4.	**Encourage Savings Accounts**  
-   * Promote savings-linked loans, where borrowers must demonstrate financial reserves before taking loans. This will improve borrower resilience and motivate the repayment within delays.
+   * Promote savings-linked loans, where borrowers must demonstrate financial reserves before taking loans. This will improve borrower resilience and motivate repayment within delays.
 5.	**Housing and Credit Policy**  
    * For renters and those with "free housing," introduce additional collateral requirements or pre-approval processes to mitigate risk.
 6.	**Enhanced Monitoring of 'Bad Risk' Loans**  
-   * Use predictive analytics to identify early warning signals for borrowers categorized as "bad risk" and implement intervention strategies (e.g., repayment reminders, and restructuring options).
+   * Use predictive analytics to identify early warning signals for borrowers categorized as "bad risk" and implement intervention strategies (e.g., repayment reminders and restructuring options).
 
 ## Conclusion
 The dashboard reveals that a large portion of loans are issued to younger borrowers (20–40 years old) with minimal financial reserves and are concentrated in car-related purposes. While most borrowers fall under the "good risk" category, a significant proportion are still high-risk borrowers.

@@ -92,7 +92,7 @@ WHERE p1.SavingAccount = 'NA'
 **Output**: 183 rows were updated in the SavingAccount column.
 
 * To reduce the amount of NA in the CheckingAccount column, I filled rows with NA in the SavingAccount column with values in the SavingAccount column using the query below:
-```sql
+```dax
 UPDATE p1
 SET p1.CheckingAccount = p2.SavingAccount
 FROM [DataBeez].dbo.Project1 p1

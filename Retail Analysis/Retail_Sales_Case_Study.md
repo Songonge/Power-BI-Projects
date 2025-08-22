@@ -2,8 +2,7 @@
 ----
 
 ## Introduction
-This project analyzes retail sales data from 2014 to 2018 (9,994 transactions) from the United States using a modern data analytics workflow. The goal was to provide a comprehensive analysis of sales, profit, and order trends, identify key business opportunities, and 
-create an interactive dashboard for decision-makers.
+This project analyzes retail sales data from 2014 to 2018 (9,994 transactions) from the United States using a modern data analytics workflow. The goal was to provide a comprehensive analysis of sales, profit, and order trends, identify key business opportunities, and create an interactive dashboard for decision-makers.
 
 The project followed the standard data analysis life cycle:  
 1. Data Collection & Understanding
@@ -31,10 +30,10 @@ The project was implemented using:
 
 ## Data Cleaning & Preparation
 * Checked for duplicates: No duplicate values were found.
-* Removed irrelevant fields: Country since it was only United States.
+* Removed irrelevant fields: Country, since it was only the United States.
 * Transformed the Product Name column by shortening text to facilitate display on the y-axis.
-* Assigned correct data type to numeric data fields.
-* Assigned correct data type to the date fields.
+* Assigned the correct data type to numeric data fields.
+* Assigned the correct data type to the date fields.
 * Checked for missing values: none were found.
 
 ## Data Modeling
@@ -47,7 +46,7 @@ The project was implemented using:
 </figure>
 <br></br>
 
-## Sales Analysis
+## A. Sales Analysis
 ### DAX Measures
 ```
 Sales = SUM('Fact Sales'[Sales])
@@ -115,6 +114,13 @@ RETURN
 ```
 
 ### Key Findings
+Below is the Sales dashboard
+<figure>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Sales.png" width=100% height=100% alt="alt text">
+  <figcaption>Figure: Sales Analysis Dashboard.</figcaption>
+</figure>
+<br></br>
+
 * Overall KPIs: Comparing year `2016` to `2015`
   * Sales: $609.2K (+29.5% vs PY)
   * Profit: $81.8K (+32.7% vs PY)
@@ -126,7 +132,7 @@ RETURN
 
 * Product Performance  
   * Top category: Technology ($0.23M, accounting for 38% of total sales)
-  * Top Sub-Category: Chairs ($84K), forllowed by Phones ($79K) and Tables ($61K)
+  * Top Sub-Category: Chairs ($84K), followed by Phones ($79K) and Tables ($61K)
   * Leading Products: Canon imageCLASS 2200 Advanced ($25.9K) and GBC Ibimaster 500 Manual ($12.9K).
   * Leading segment: Consumer ($0.30M, 50% of revenue)  
 
@@ -137,16 +143,16 @@ RETURN
   * Consumer segment led with $0.30M in sales (+114%), followed by Corporate and Home Office.
 
 * Year-Over-Year Analysis
-  * Comparing 2015 to 2014 showed a decrease in sales in some areas, leading to 28% lost.
+  * Comparing 2015 to 2014 showed a decrease in sales in some areas, leading to a 28% loss.
   * Comparing 2016 to 2015 showed an increase in all areas, giving an overall of 29.5%.
   * Comparing 2016 to 2015 showed an increase in all areas, giving an overall of 20.4%.
 
-
+The dashboard was designed to provide business stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions.
 
 ## Recommendations
 Based on the analysis, the following strategies are recommended:
 * Expand Technology Product Line  
-  * Focus on increasing availability and marketing of high-performing technology items.
+  * Focus on increasing the availability and marketing of high-performing technology items.
     
 * Target Underperforming Regions  
   * Deploy regional campaigns to boost sales in low-revenue states.
@@ -169,6 +175,3 @@ The interactive Power BI dashboard serves as a live decision-making tool, enabli
 
 
 
-
-The dashboard was designed to provide business stakeholders with a clear and actionable view of key performance 
-indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions.

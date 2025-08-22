@@ -4,7 +4,7 @@
 ## Table of Contents  
 1. [Introduction](#introduction)
 2. [Backgrounf](#background)
-3. [Data Cleaning & Preparation](#Data-Cleaning-Preparation)
+3. [Data Cleaning and Preparation](#Data-Cleaning-and-Preparation)
 4. [Data Modeling](#data-modeling)
 5. [A. Sales Analysis](#A-Sales-Analysis)
    * [DAX Measures](#dax-measures)
@@ -45,7 +45,7 @@ The project was implemented using:
 * **Power BI**: Dashboard creation and interactive reporting
 * DAX (Data Analysis Expressions): Custom KPI calculations
 
-## Data Cleaning & Preparation
+## Data Cleaning and Preparation
 * Checked for duplicates: No duplicate values were found.
 * Removed irrelevant fields: Country, since it was only the United States.
 * Transformed the Product Name column by shortening text to facilitate display on the y-axis.

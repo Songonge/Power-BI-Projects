@@ -4,7 +4,7 @@
 ## Table of Contents  
 1. [Introduction](#introduction)
 2. [Backgrounf](#background)
-3. [Data Cleaning & Preparation](#Data-Cleaning-&-Preparation)
+3. [Data Cleaning & Preparation](#Data-Cleaning-Preparation)
 4. [Data Modeling](#data-modeling)
 5. [A. Sales Analysis](#A-Sales-Analysis)
    * [DAX Measures](#dax-measures)

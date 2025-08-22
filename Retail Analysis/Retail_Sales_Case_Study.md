@@ -1,6 +1,23 @@
 # Retail Sales Case Study
 ----
 
+## Table of Contents  
+1. [Introduction](#introduction)
+2. [Backgrounf](#background)
+3. [Data Cleaning & Preparation](#Data-Cleaning-&-Preparation)
+4. [Data Modeling](#data-modeling)
+5. [A. Sales Analysis](#A-Sales-Analysis)
+   * [DAX Measures](#dax-measures)
+   * [Key Findings](#Key-Findings)
+6. [B. Profit Analysis](#B-profit-Analysis)
+   * [DAX Measures](#dax-measures)
+   * [Key Findings](#Key-Findings)
+7. [C. Orders Analysis](#C-orders-Analysis)
+   * [DAX Measures](#dax-measures)
+   * [Key Findings](#Key-Findings)
+8. [Recommendations](#recommendations)
+9. [Conclusion](#conclusion)
+
 ## Introduction
 This project analyzes retail sales data from 2014 to 2018 (9,994 transactions) from the United States using a modern data analytics workflow. The goal was to provide a comprehensive analysis of sales, profit, and order trends, identify key business opportunities, and create an interactive dashboard for decision-makers.
 
@@ -121,33 +138,236 @@ Below is the Sales dashboard
 </figure>
 <br></br>
 
-* Overall KPIs: Comparing year `2016` to `2015`
-  * Sales: $609.2K (+29.5% vs PY)
-  * Profit: $81.8K (+32.7% vs PY)
-  * Orders: 2,587 (+23.1% vs PY)
-  * Customers: 638 (+11.3% vs PY)  
+* Overall KPIs:  
+  * Sales: $2.3M 
+  * Profit: $286.4K 
+  * Orders: 9,994
+  * Customers: 793 
 
 * Regional Insights  
-  * Strongest sales occurred in California ($ 131,551.9), followed by New York ($71,844.1) and Texas ($41,686.2)
+  * Strongest sales occurred in California ($457,687.6), followed by New York ($310,876.3) and Texas ($170,188.0)
 
 * Product Performance  
-  * Top category: Technology ($0.23M, accounting for 38% of total sales)
-  * Top Sub-Category: Chairs ($84K), followed by Phones ($79K) and Tables ($61K)
-  * Leading Products: Canon imageCLASS 2200 Advanced ($25.9K) and GBC Ibimaster 500 Manual ($12.9K).
-  * Leading segment: Consumer ($0.30M, 50% of revenue)  
+  * Top category: Technology ($0.84M, accounting for 37% of total sales)
+  * Top Sub-Category: Phones ($0.33M), followed by Chairs ($0.33M) and Tables ($0.22M)
+  * Leading Products: Canon imageCLASS 2200 Advanced ($61.6K)
 
 * Customer Insights  
-  * High-value customers included Tamara Chand ($18.3K) and Christopher Conant ($11.9K).  
+  * High-value customers included Sean Miller ($25.0K) and Tamara Chand ($19.1K).  
 
-* Customer Segments
-  * Consumer segment led with $0.30M in sales (+114%), followed by Corporate and Home Office.
+* Customer Segments  
+  * Consumer segment led with $1.16M (50% of revenue), followed by Corporate and Home Office.
 
-* Year-Over-Year Analysis
+* Year-Over-Year Analysis  
   * Comparing 2015 to 2014 showed a decrease in sales in some areas, leading to a 28% loss.
   * Comparing 2016 to 2015 showed an increase in all areas, giving an overall of 29.5%.
-  * Comparing 2016 to 2015 showed an increase in all areas, giving an overall of 20.4%.
+  * Comparing 2017 to 2016 showed an increase in all areas, giving an overall of 20.4%.
 
-The dashboard was designed to provide business stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions.
+ 
+## B. Profit Analysis
+### DAX Measures
+```
+Profit = SUM('Fact Sales'[Profit])
+```
+```
+Previous Year Profit = CALCULATE([Profit], SAMEPERIODLASTYEAR('Date Table'[Date]))
+```
+```
+YoY% Profit =
+  VAR a = DIVIDE([Profit] - [PY Profit], [PY Profit])
+  VAR b = FORMAT(a, "#0.0%")           
+RETURN
+  IF(a > 0, "▲", "▼") & " " & b
+```
+```
+Color Profit = IF([Profit] > [PY Profit], "Green", "#D60000")
+```
+```
+Max Profit =
+  VAR Max_Profit = MAXX(ALL('Date Table'[Monthnumber]), [Profit])
+RETURN
+  IF([Profit] = Max_Profit, Max_Profit, BLANK()) 
+```
+```
+Color Profit Segment =
+  VAR max_v = MAXX(ALL('Dim Customers'[Segment]), [Profit])
+  VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Profit Product =
+  VAR max_v = MAXX(ALL('Dim Products'[Product Name]), [Profit])
+  VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Max Profit Product =
+  VAR _max = MAXX(ALL('Dim Products'[Product Name]), [Profit])
+ RETURN
+  IF([Profit] = _max, _max, BLANK())
+```
+```
+Color Profit Category =
+  VAR max_v = MAXX(ALL('Dim Products'[Category]), [Profit])
+  VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Profit Sub-Category =
+  VAR max_v = MAXX(ALL('Dim Products'[Sub-Category]), [Profit])
+  VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Profit Customers =
+  VAR max_v = MAXX(ALL('Dim Customers'[Customer Name]), [Profit])
+  VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Max Profit Customer =
+  VAR _max = MAXX(ALL('Dim Customers'[Customer Name]), [Profit])
+RETURN
+  IF([Profit] = _max, _max, BLANK())
+```
+
+
+### Key Findings
+Below is the Profit dashboard
+<figure>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Profit.png" width=100% height=100% alt="alt text">
+  <figcaption>Figure: Profit Analysis Dashboard.</figcaption>
+</figure>
+<br></br>
+
+* Overall KPIs:  
+  * Sales: $2.3M 
+  * Profit: $286.4K 
+  * Orders: 9,994
+  * Customers: 793 
+
+* Regional Insights  
+  * Strongest profit occurred in California ($76.381.4), followed by New York ($74,038.5) and Washington ($33,402.7)
+
+* Product Performance  
+  * Top category: Technology ($145K, accounting for 50% of total Profit)
+  * Top Sub-Category: Copiers ($56K), followed by Phones ($45K) and Accessories ($42K)
+  * Leading Products: Canon imageCLASS 2200 Advanced ($25.2K)
+
+* Customer Insights  
+  * High-value customers included Tamara Chand ($9.0K) and Raymonf Buch ($7.0K).  
+
+* Customer Segments  
+  * Consumer segment led with $134K (47% of profit), followed by Corporate ($92K, 32%) and Home Office ($60K, 21%).
+
+* Year-Over-Year Analysis  
+  * Comparing 2015 to 2014 showed an increase in profit in most areas, leading to an overall percentage of 24.4%.
+  * Comparing 2016 to 2015 showed an increase in most areas, leading to an overall percentage of 32.7%.
+  * Comparing 2017 to 2016 showed an increase in most areas, leading to an overall percentage of 14.2%.
+
+
+## C. Orders Analysis
+### DAX Measures
+```
+Orders = SUM('Fact Sales'[Orders])
+```
+```
+Previous Year Orders = CALCULATE([Orders], SAMEPERIODLASTYEAR('Date Table'[Date]))
+```
+```
+YoY% Orders =
+  VAR a = DIVIDE([Orders] - [PY Orders], [PY Orders])
+  VAR b = FORMAT(a, "#0.0%")           
+RETURN
+  IF(a > 0, "▲", "▼") & " " & b
+```
+```
+Color Orders = IF([Orders] > [PY Orders], "Green", "#D60000")
+```
+```
+Max Orders =
+  VAR Max_Orders = MAXX(ALL('Date Table'[Monthnumber]), [Orders])
+RETURN
+  IF([Orders] = Max_Orders, Max_Orders, BLANK()) 
+```
+```
+Color Orders Segment =
+  VAR max_v = MAXX(ALL('Dim Customers'[Segment]), [Orders])
+  VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Orders Product =
+  VAR max_v = MAXX(ALL('Dim Products'[Product Name]), [Orders])
+  VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Max Orders Product =
+  VAR _max = MAXX(ALL('Dim Products'[Product Name]), [Orders])
+ RETURN
+  IF([Orders] = _max, _max, BLANK())
+```
+```
+Color Orders Category =
+  VAR max_v = MAXX(ALL('Dim Products'[Category]), [Orders])
+  VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Orders Sub-Category =
+  VAR max_v = MAXX(ALL('Dim Products'[Sub-Category]), [Orders])
+  VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Color Orders Customers =
+  VAR max_v = MAXX(ALL('Dim Customers'[Customer Name]), [Orders])
+  VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
+RETURN color_v
+```
+```
+Max Orders Customer =
+  VAR _max = MAXX(ALL('Dim Customers'[Customer Name]), [Orders])
+RETURN
+  IF([Orders] = _max, _max, BLANK())
+```
+
+
+### Key Findings
+Below is the Orders dashboard
+<figure>
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Orders.png" width=100% height=100% alt="alt text">
+  <figcaption>Figure: Orders Analysis Dashboard.</figcaption>
+</figure>
+<br></br>
+
+* Overall KPIs:  
+  * Sales: $2.3M 
+  * Profit: $286.4K 
+  * Orders: 9,994
+  * Customers: 793 
+
+* Regional Insights  
+  * Maximum orders occurred in California (2,001), followed by New York (1,128) and Texas (985)
+
+* Product Performance  
+  * Top category: Office Suppliers (6,000, accounting for 60% of total orders)
+  * Top Sub-Category: Binders (1,523), followed by Paper (1,370) and Furnishings (957)
+  * Leading Products: Staple envelope (48), followed by Easy-staple paper (46)
+
+* Customer Insights  
+  * High-value customers included William Brown (37) and John Lee (34).  
+
+* Customer Segments
+  * Consumer segment led with $1.16M (50% of revenue), followed by Corporate and Home Office.
+
+* Year-Over-Year Analysis  
+  * Comparing 2015 to 2014 showed an increase in orders in most areas, leading to an overall percentage of 5.5%.
+  * Comparing 2016 to 2015 showed a significant increase in most areas, leading to an overall percentage of 23.1%.
+  * Comparing 2017 to 2016 showed an increase in most areas, leading to an overall percentage of 28.0%.
+
+The dashboards were designed to provide business stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions.
 
 ## Recommendations
 Based on the analysis, the following strategies are recommended:
@@ -157,10 +377,10 @@ Based on the analysis, the following strategies are recommended:
 * Target Underperforming Regions  
   * Deploy regional campaigns to boost sales in low-revenue states.
     
-* Strengthen B2C Marketing Efforts
+* Strengthen B2C Marketing Efforts  
   * Consumer segment shows the most potential; allocate more marketing resources here.
 
-* Loyalty Program for Top Customers
+* Loyalty Program for Top Customers  
   * Incentivize repeat purchases through personalized offers and loyalty rewards.
 
 ## Conclusions

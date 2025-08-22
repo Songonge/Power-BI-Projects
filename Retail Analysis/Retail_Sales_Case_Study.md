@@ -15,8 +15,9 @@
 7. [C. Orders Analysis](#C-orders-Analysis)
    * [DAX Measures](#dax-measures)
    * [Key Findings](#Key-Findings)
-8. [Recommendations](#recommendations)
-9. [Conclusion](#conclusion)
+8. [Challenges Faced](#Challenges-Faced)
+9. [Recommendations](#recommendations)
+10. [Conclusion](#conclusion)
 
 ## Introduction
 This project analyzes retail sales data from 2014 to 2018 (9,994 transactions) from the United States using a modern data analytics workflow. The goal was to provide a comprehensive analysis of sales, profit, and order trends, identify key business opportunities, and create an interactive dashboard for decision-makers.
@@ -31,7 +32,7 @@ The project followed the standard data analysis life cycle:
 ## Background
 Retailers often manage vast amounts of sales data across multiple channels and geographies. Without proper analysis, identifying growth opportunities and performance gaps becomes challenging.
 
-The dataset consisted of:  
+The dataset was downloaded from the FP20 Analytics website [Link](https://fp20analytics.com/wp-content/uploads/2024/05/10.-Retail-Supply-Chain-Sales-Analysis_Challenge-10.xlsx) and consisted of:  
 * Retail Transactions (2014–2018)
 * Sales, Profit, Discounts, Quantity
 * Products (Product ID, Product Name, Category, Sub-category)
@@ -370,6 +371,15 @@ Below is the Orders dashboard
 > [!NOTE]
 > The dashboards were designed to provide stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions in real time.
 
+## Challenges Faced
+While building the dashboards, I faced so many challenges, such as:  
+- Creating a bar chart that highlights the maximum bar with a different color, and having the y-axis label and data labels above the bar. So, I ended up creating a simple bar chart highlighting the bar with the maximum value in a different color.
+
+- Making the length of the previous year bar pass that of the current year. I added the previous year to the column and bar charts using Error Bar. However, I could not increase the Previous year bar to be longer than the current year bar, since the maximum length is 10.
+
+- Using the integrated bookmark navigator in Power BI. I did not want to create three pages of a dashboard. So, I decided to use bookmarks to switch from one dashboard to another. It took me time to create the bookmark navigation from scratch for it to work properly the way I wanted, but I eventually found my way around it.
+
+- Creating the map chart with bubbles. The Retail Sales dataset I used did not contain the latitude and longitude columns. As a result, I could not create a map chart with bubbles. So, I settled for the filled map chart.
 
 ## Recommendations
 Based on the analysis, the following strategies are recommended:
@@ -392,8 +402,6 @@ By acting on the recommendations:
 * Profit margins can be improved by 5–8% annually.
 * Underperforming regions could generate up to $250K in additional sales.
 * Retention-focused strategies may increase customer lifetime value by 12–15%.
-
-
 
 
 

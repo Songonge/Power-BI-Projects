@@ -367,7 +367,9 @@ Below is the Orders dashboard
   * Comparing 2016 to 2015 showed a significant increase in most areas, leading to an overall percentage of 23.1%.
   * Comparing 2017 to 2016 showed an increase in most areas, leading to an overall percentage of 28.0%.
 
-The dashboards were designed to provide business stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions.
+> [!NOTE]
+> The dashboards were designed to provide stakeholders with a clear and actionable view of key performance indicators (KPIs), enabling them to monitor growth, identify trends, and make data-driven decisions in real time.
+
 
 ## Recommendations
 Based on the analysis, the following strategies are recommended:
@@ -391,7 +393,7 @@ By acting on the recommendations:
 * Underperforming regions could generate up to $250K in additional sales.
 * Retention-focused strategies may increase customer lifetime value by 12–15%.
 
-The interactive Power BI dashboard serves as a live decision-making tool, enabling managers to track KPIs and adapt strategies in real time.
+
 
 
 

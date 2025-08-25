@@ -40,7 +40,7 @@ The figure below shows the dashboard, which was built based on the analysis of t
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Avocado_Price_Analysis/Avocado%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure: Avocado Price Analysis Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ## Data Interpretation
 This step allowed me to make sense of my analysis and visualization. The following insights were derived from the analysis and the dashboard.

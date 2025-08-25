@@ -409,6 +409,5 @@ By acting on the recommendations:
 * Underperforming regions could generate up to $250K in additional sales.
 * Retention-focused strategies may increase customer lifetime value by 12–15%.
 
-> [!EXAMPLE]
-> test
+
 

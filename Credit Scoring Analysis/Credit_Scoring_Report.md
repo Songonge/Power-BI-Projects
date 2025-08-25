@@ -173,18 +173,20 @@ Risk Category =  IF(Project1[CreditAmount] > 5000, "High Risk", "Low Risk")
 ```
 
 ## Data Visualization in Power BI
-* Created Bar charts to showcase the credit amount by purpose and by checking and saving accounts.
-* Created Line charts to showcase the credit amount by duration, age and risk category, and age and sex.
+* Created Bar charts to showcase the credit amount by purpose and by checking and savings accounts.
+* Created Line charts to showcase the credit amount by duration, age, risk category, and age and sex.
 * Created donut charts to showcase the credit amount by risk category and housing.
 * Created donut charts to showcase the percentage of good vs. bad credit risk.
 * Used cards to show the total credit amount, average credit amount, total number of people who applied for credit, the average age, and the average credit duration. 
 * Used slicers for sex, housing, credit risk, and risk categories to make the dashboard interactive.
 
+| Figure: Credit Scoring Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Credit%20Scoring%20Analysis/Credit%20Scoring%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Credit Scoring Analysis Dashboard</figcaption>
+<!--   <figcaption>Figure: Credit Scoring Analysis Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 Here is the [Link to the Interactive Dashboard](https://app.powerbi.com/groups/me/reports/25b71013-82ea-423e-b684-e57c5b89c366?ctid=92454335-564e-4ccf-b0b0-24445b8c03f7&pbi_source=linkShare).
  

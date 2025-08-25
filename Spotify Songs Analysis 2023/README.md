@@ -90,7 +90,7 @@ Power Query was used to clean and transform the data. To complete this process, 
 5. Removed the Error value in the Stream column by replacing it with the mean of the column.
 
 ### Data Analysis and Dashboard Development
-1. I created several charts such as
+1. I created several charts, such as
    * Bar charts to show artists and tracks by the number of streams, and artists by tracks
    * A Line chart to show charts from various music platforms by track name
    * A donut chart to show the number of tracks by mode
@@ -100,11 +100,13 @@ Power Query was used to clean and transform the data. To complete this process, 
 3. Included key metrics and charts to monitor top songs, top tracks, number of streams, and Number of tracks. 
 4. After creating all the charts, I combined them in a dashboard as shown in Figure 1.
 
+| Figure: Spotify Songs Analysis 2023 Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Spotify%20Songs%20Analysis%202023/Spotify%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Spotify Songs Analysis 2023 Dashboard</figcaption>
+<!--   <figcaption>Figure: Spotify Songs Analysis 2023 Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 Here is the link to the [Interactive dashboard](https://app.powerbi.com/groups/me/reports/f6d80bc0-bd11-4a4b-8952-7720f4a29503/90fecee730968d208eda?ctid=92454335-564e-4ccf-b0b0-24445b8c03f7&experience=power-bi)
 

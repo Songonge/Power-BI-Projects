@@ -37,9 +37,10 @@ The project aims to achieve the following specific objectives:
 3.	Carry out basic data analysis and dashboard utilization to enhance decision-making capabilities.
  
 ## Data Description
+<hr>
 This dataset consists of listings of all the movies and TV shows available on Netflix from 2008 to 2021, along with details such as cast, directors, ratings, release year, duration, etc. The dataset contains 10 columns and 8791 rows described as follows:
 *	*ShowID*: The ID number of the show made of the letter “s” and a number.
-*	*Type*: The type of content such as “Movie” or “TV Show”
+*	*Type*: The type of content, such as “Movie” or “TV Show”
 *	*Title*: The title of the “Movie” or “TV Show”
 *	*Director*: Director of the content “Movie” or “TV Show”
 *	*Country*: The country where the “Movie” or “TV Show” is provided
@@ -50,7 +51,7 @@ This dataset consists of listings of all the movies and TV shows available on Ne
 *	*ListedIn*: The category in which the Movie or TV Show is listed
 
 ## Tech Stack
-The analysis tool for this project is basic and focused on data analysis using Microsoft Power BI. I utilize Power BI's built-in features like Visualizations, and filters to analyze content data.
+The analysis tool for this project is basic and focused on data analysis using Microsoft Power BI. I utilize Power BI's built-in features like Visualizations and filters to analyze content data.
 
 ## Project Scope
 * **Data Gathering and Integration**
@@ -76,14 +77,16 @@ The analysis tool for this project is basic and focused on data analysis using M
 * **Data Analysis and Visualization**
 The analysis was performed in Power BI. To do so,  
 *	I used tables to create visuals. 
-*	I created several charts such as Bar charts, Line charts, a pie chart, a Map, and Stacked Bar charts.
+*	I created several charts, such as Bar charts, Line charts, a pie chart, a Map, and Stacked Bar charts.
 *	After creating all the charts, I combined them in a dashboard as shown in Figure 1.
 
+| Figure: Netflix Content Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Netflix%20Content%20Analysis/Netflix%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Netflix Content Analysis Dashboard</figcaption>
+<!--   <figcaption>Figure: Netflix Content Analysis Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ## Data Interpretation
 1. **Content Type Distribution**: Movies dominate Netflix's library, comprising nearly 70% of the content, while TV shows make up the remaining 30%. This indicates a significant emphasis on movie content.

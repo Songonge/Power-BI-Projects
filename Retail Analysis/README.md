@@ -58,11 +58,14 @@ The project was implemented using:
 * Ensured the Date table was marked as a date. This was needed for time analysis and using Time Intelligence functions.
 * Ensured date fields (Order Date, Ship Date) were consistent and linked with the calendar table.
 * Created Fact and Dimension Tables from the Order Table. The image below shows the relationship.
+
+| Figure: Star Schema - Relationship between Fact and Dimension tables |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Start_Schema_Relationship.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Star Schema - Relationship between Fact and Dimension tables.</figcaption>
+<!--   <figcaption>Figure: Star Schema - Relationship between Fact and Dimension tables.</figcaption> -->
 </figure>
-<br></br>
+<!-- <br></br> -->
 
 ## A. Sales Analysis
 ### DAX Measures
@@ -132,12 +135,13 @@ RETURN
 ```
 
 ### Key Findings
-Below is the Sales dashboard
+| Figure: Sales Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Sales.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Sales Analysis Dashboard.</figcaption>
+<!--   <figcaption>Figure: Sales Analysis Dashboard.</figcaption> -->
 </figure>
-<br></br>
+<!-- <br></br> -->
 
 * Overall KPIs:  
   * Sales: $2.3M 
@@ -234,12 +238,13 @@ RETURN
 
 
 ### Key Findings
-Below is the Profit dashboard
+| Figure: Profit Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Profit.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Profit Analysis Dashboard.</figcaption>
+<!--   <figcaption>Figure: Profit Analysis Dashboard.</figcaption> -->
 </figure>
-<br></br>
+<!-- <br></br> -->
 
 * Overall KPIs:  
   * Sales: $2.3M 
@@ -336,12 +341,13 @@ RETURN
 
 
 ### Key Findings
-Below is the Orders dashboard
+| Figure: Orders Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Retail Analysis/Orders.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Orders Analysis Dashboard.</figcaption>
+<!--   <figcaption>Figure: Orders Analysis Dashboard.</figcaption> -->
 </figure>
-<br></br>
+<!-- <br></br> -->
 
 * Overall KPIs:  
   * Sales: $2.3M 

@@ -34,6 +34,8 @@ The tool I used to clean the data was Power BI because its tools are easy to wor
 In Power BI, I used Visualizations to create a dashboard as shown in Figure 1. I used a Clustered Column Chart, a Clustered Bar Chart, a Donut Chart, a Line Chart, a Matrix, and Cards. My Charts were assembled and made interactive through the use of Slicers. These Slicers are powerful tools to use if you want to make your dashboard dynamic. In this case, if you are working within a team, it will be easy for you to work collaboratively with your team members. They will be able to add or modify the dashboard to reflect what is expected. 
 
 The figure below shows the dashboard, which was built based on the analysis of the data. 
+| Figure: Avocado Price Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Avocado_Price_Analysis/Avocado%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
   <figcaption>Figure: Avocado Price Analysis Dashboard</figcaption>

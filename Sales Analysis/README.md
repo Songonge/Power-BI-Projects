@@ -29,7 +29,7 @@ The following bullets list the insights I will derive through my data analysis p
 Here is what I did:
 
 ## Data Acquisition and Preparation
-MeriSKILL provided data. I downloaded the dataset from *Google Drive*. Then, I uploaded it in Power BI using the *Get Data* option. This dataset was unclean and had 10 columns in total. The data were recorded for the year *2019*.
+MeriSKILL provided data. I downloaded the dataset from *Google Drive*. Then, I uploaded it to Power BI using the *Get Data* option. This dataset was unclean and had 10 columns in total. The data were recorded for the year *2019*.
 
 ## Data Cleaning and Transformation
 The first row of the data was used as headers using the option *Use First Row as Headers* under the Home tab. Then, using the *Transform* tab, I selected *Detect Data Type* to automatically identify the data type of each column and convert them where needed.
@@ -47,11 +47,13 @@ The first row of the data was used as headers using the option *Use First Row as
 ## Data Analysis and Visualization
 In Power BI, I used Visualizations to create a dashboard as shown in the figure below. 
 
+| Figure: Sales Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Sales%20Analysis/Sales%20Analysis%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Sales Analysis Dashboard</figcaption>
+<!--   <figcaption>Figure: Sales Analysis Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 I used a
 *	Line chart to represent sales trend over the year, 
@@ -64,15 +66,15 @@ I used a
 
 ## Interpretation of Data
 The following insights were derived from the data analysis:
-*	The top five products by sales count were the iPhone, 27in 4K Gaming Monitor, Google Phone, MacBook Pro Laptop, and ThinkPad Laptop.  
+*	The top five products by sales count were the iPhone, 27-inch 4K Gaming Monitor, Google Phone, MacBook Pro Laptop, and ThinkPad Laptop.  
 *	The top five best-selling products were  AAA Batteries (4-pack), AA Batteries (4-pack), USB-C Charging Cable, Lightning Charging Cable, and Wired Headphones.
-*	The day of most sales was Tuesday and the minimum sales was on Thursday.
-*	 December was the month with major sales. On the contrary, January was the month with lower sales followed by February. 
+*	The day of the most sales was Tuesday, and the minimum sales were on Thursday.
+*	 December was the month with major sales. On the contrary, January was the month with lower sales, followed by February. 
 *	The top five cities with the most sales were Los Angeles, San Francisco, Atlanta, New York City, and Boston.
 
 ## Recommendations
 Based on the insights from the sales analysis, here are several recommendations to enhance sales strategies and optimize performance:
-*	Ensure ample inventory of the top five products by sales count (iPhone, 27in 4K Gaming Monitor, Google Phone, MacBook Pro Laptop, and ThinkPad Laptop) and best-selling products (AAA Batteries, AA Batteries, USB-C Charging Cable, Lightning Charging Cable, and Wired Headphones) to meet high demand and prevent stockouts. 
+*	Ensure ample inventory of the top five products by sales count (iPhone, 27-inch 4K Gaming Monitor, Google Phone, MacBook Pro Laptop, and ThinkPad Laptop) and best-selling products (AAA Batteries, AA Batteries, USB-C Charging Cable, Lightning Charging Cable, and Wired Headphones) to meet high demand and prevent stockouts. 
 *	Develop marketing campaigns and promotions focused on these top products to further boost sales and capitalize on their popularity.
 *	Implement targeted promotions and discounts on Thursdays to increase sales on this typically slow day. Consider limited-time offers or flash sales to drive urgency. On the other hand, enhance marketing efforts on Tuesdays with special deals, bundles, or loyalty rewards to sustain and potentially increase high sales volumes on this day. 
 *	Plan extensive marketing campaigns and stock inventory well in advance for December, the month with major sales. Consider holiday-themed promotions, gift bundles, and early bird specials to maximize revenue during this peak season. 

@@ -7,14 +7,14 @@
 3. [Data Cleaning and Preparation](#Data-Cleaning-and-Preparation)
 4. [Data Modeling](#data-modeling)
 5. [A. Sales Analysis](#A-Sales-Analysis)
-   * [DAX Measures](#dax-measures)
-   * [Key Findings](#Key-Findings)
+   * [1. DAX Measures](#1-dax-measures)
+   * [2. Key Findings](#2-Key-Findings)
 6. [B. Profit Analysis](#B-profit-Analysis)
-   * [DAX Measures](#dax-measures)
-   * [Key Findings](#Key-Findings)
+   * [1. DAX Measures](#1-dax-measures)
+   * [2. Key Findings](#2-Key-Findings)
 7. [C. Orders Analysis](#C-orders-Analysis)
-   * [DAX Measures](#dax-measures)
-   * [Key Findings](#Key-Findings)
+   * [1. DAX Measures](#1-dax-measures)
+   * [2. Key Findings](#2-Key-Findings)
 8. [Challenges Faced](#Challenges-Faced)
 9. [Recommendations](#recommendations)
 10. [Conclusion](#conclusion)
@@ -68,7 +68,7 @@ The project was implemented using:
 <!-- <br></br> -->
 
 ## A. Sales Analysis
-### DAX Measures
+### 1. DAX Measures
 ```
 Sales = SUM('Fact Sales'[Sales])
 ```
@@ -134,7 +134,7 @@ RETURN
   IF([Sales] = _max, _max, BLANK())
 ```
 
-### Key Findings
+### 2. Key Findings
 | Figure: Sales Analysis Dashboard |
 | :------------: |
 <figure>
@@ -170,7 +170,7 @@ RETURN
 
  
 ## B. Profit Analysis
-### DAX Measures
+### 1. DAX Measures
 ```
 Profit = SUM('Fact Sales'[Profit])
 ```
@@ -237,7 +237,7 @@ RETURN
 ```
 
 
-### Key Findings
+### 2. Key Findings
 | Figure: Profit Analysis Dashboard |
 | :------------: |
 <figure>
@@ -273,7 +273,7 @@ RETURN
 
 
 ## C. Orders Analysis
-### DAX Measures
+### 1. DAX Measures
 ```
 Orders = SUM('Fact Sales'[Orders])
 ```
@@ -340,7 +340,7 @@ RETURN
 ```
 
 
-### Key Findings
+### 2. Key Findings
 | Figure: Orders Analysis Dashboard |
 | :------------: |
 <figure>
@@ -409,5 +409,6 @@ By acting on the recommendations:
 * Underperforming regions could generate up to $250K in additional sales.
 * Retention-focused strategies may increase customer lifetime value by 12–15%.
 
-
+> [!EXAMPLE]
+> test
 

@@ -127,11 +127,14 @@ To complete this step, 1 to many relationships were created between the four tab
 * The CANCELLATION_REASON column from the airlines cancellation_codes table to the CANCELLATION_REASON column in the flights table
 * The IATA_CODE column from the airports table connected to the ORIGIN_AIRPORT column in the flights table
 The following figure shows the relationships created.
+
+| Figure: Star Schema - Relationships between tables |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Relationship.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Relationships between tables</figcaption>
+<!--   <figcaption>Figure: Relationships between tables</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ## Step 3: Adding Data Analysis Expression (DAX) Measures to the tables
 DAX measures were used to define custom calculations. This was to enhance my data model and create new metrics to support my analysis.  The following new measures were calculated.
@@ -156,7 +159,7 @@ DAX measures were used to define custom calculations. This was to enhance my dat
 
 ## Step 4: Designing an Interactive Dashboard
 This step involves creating visuals and charts in Power BI to show a comprehensive overview of the flights' data.
-1. I created several charts such as
+1. I created several charts, such as
    * Bar charts to show total flights by city, delayed and canceled flights by airline
    * A Line chart to show both canceled and delayed flights by airport
    * Line charts to show total flights by month for On-Time, Delayed, and Canceled
@@ -165,12 +168,13 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
    * A Stacked Bar chart to show the percentage of flights by status.
 2. Designed a dashboard by combining all the charts. The dashboard is shown in the following figure.
 
+| Figure: Flight Delays and Cancellations Analysis Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flight%20Analysis.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Flight Delays and Cancellations Analysis Dashboard</figcaption>
+<!--   <figcaption>Figure: Flight Delays and Cancellations Analysis Dashboard</figcaption> -->
 </figure>
-<br/><br/>
-
+<!-- <br/><br/> -->
 
 ## Data Interpretation
 1. **Delayed Flights**
@@ -203,7 +207,7 @@ The following recommendations are provided to help airlines and airports enhance
 2. **Optimize Airline Operations**
    * Southwest Airlines and Delta Air Lines had the highest number of delays. These airlines could improve by reviewing operational efficiency, staffing adequacy, and maintenance schedules to reduce delays.
 3. **Strengthen National Air System Coordination**
-   * A significant portion of cancellations were due to national air system problems. Better communication and coordination between airlines and air traffic control could help reduce these disruptions.
+   * A significant portion of cancellations was due to national air system problems. Better communication and coordination between airlines and air traffic control could help reduce these disruptions.
 4. **Address Frequent Issues at Busy Airports**
    * Airports like Hartsfield-Jackson Atlanta, Chicago O'Hare, and Dallas International experience the most cancellations and delays. Implementing more effective contingency plans and increasing staff during high-traffic times could reduce the impact.
 5. **Improve Security Procedures**

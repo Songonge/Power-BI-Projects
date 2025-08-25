@@ -1,21 +1,11 @@
 # Project: Budget and Expenses Analysis by Project
 
-<!--
 ## Table of Contents  
 1. [Introduction](#introduction)
-   * [Business Overview or Problem](#business-overview-or-problem)
-   * [Rationale for the Project](#rationale-for-the-project)
-2. [Aim of the Project](#aim-of-the-project)
-3. [Tech Stack](#tech-stack)
-4. [Step 1: Loading and preparing data in Power BI](#step-1-loading-and-preparing-data-in-power-bi)
-   * [Data Gathering and Integration](#data-gathering-and-integration)
-   * [Data Description and Exploration](#data-description-and-exploration)
-   * [Data Cleaning and Transformation](#data-cleaning-and-transformation)
-5. [Step 2: Building a Relational Model Between Tables](#step-2-building-a-relational-model-between-tables)
-6. [Step 3: Adding Data Analysis Expression (DAX) Measures to the tables](#step-3-adding-data-analysis-expression-DAX-measures-to-the-tables)
-7. [Step 4: Designing an Interactive Dashboard](#step-4-designing-an-interactive-dashboard)
-8. [Data Interpretation](#data-interpretation)
-9. [Recommendations](#recommendations)  -->
+2. [Achieved Goals](#achieved-goals)
+3. [Steps to Complete this Project](#Steps-to-Complete-this-Project)
+4. [Required Tools for this Project](#Required-Tools-for-this-Project)
+5. [Conclusion](#Conclusion)
 
 
 ## Introduction
@@ -29,11 +19,13 @@ This report delves into the insights derived from the data visualization, identi
 * Highlight growth and challenges.
 * Provide actionable insights.
 
+| Figure: Budget and Expenses Analysis by Project Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.jpg" width=100% height=100% alt="alt text">
-  <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption>
+<!--   <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ## Steps to Complete this Project
 The following steps were completed:  

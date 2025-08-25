@@ -1,4 +1,5 @@
 # Project: HR Analytics
+---
 
 ## Table of Contents  
 1. [Introduction](#introduction)
@@ -16,7 +17,7 @@
 8. [Recommendations](#recommendations)
    
 ## Introduction
-This project about HR Analytics focuses on data analytics which aims at evaluating the current human resources practices within the organization, identifying key areas for improvement, and providing actionable recommendations aimed at enhancing workforce efficiency, employee satisfaction, and overall organizational performance. Power Query in Power BI will be used to clean and transform the data. Then, dashboards will be built to communicate critical insights.
+This project about HR Analytics focuses on data analytics, which aims at evaluating the current human resources practices within the organization, identifying key areas for improvement, and providing actionable recommendations aimed at enhancing workforce efficiency, employee satisfaction, and overall organizational performance. Power Query in Power BI will be used to clean and transform the data. Then, dashboards will be built to communicate critical insights.
 
 ## Project Aim
 Delve into the world of human resources with a keen eye on data analysis to optimize talent management and organizational performance. The project seeks to address pressing questions and uncover meaningful conclusions based on data.   
@@ -31,10 +32,10 @@ The following are the deliverables from this project:
 *	Presentation to key stakeholders summarizing the report's findings and recommendations.
   
 ## Data Acquisition and Preparation
-MeriSKILL provided the dataset. I downloaded it from Google Drive. Then, I uploaded it in Power BI using the Get Data option. This dataset was unclean and had 35 columns and 1471 rows. 
+MeriSKILL provided the dataset. I downloaded it from Google Drive. Then, I uploaded it to Power BI using the Get Data option. This dataset was unclean and had 35 columns and 1471 rows. 
 
 ## Data Cleaning and Transformation 
-The first row of the data was used as headers using the option Use First Row as Headers under the Home tab. Then, using the Transform tab, I selected Detect Data Type to automatically identify the data type of each column and convert them where needed. Next, I  
+The first row of the data was used as headers using the option Use First Row as Headers under the Home tab. Then, using the Transform tab, I selected Detect Data Type to automatically identify the data type of each column and convert it where needed. Next, I  
 * Deleted redundant columns: This reduced the columns to 26.
 *	Renamed the columns appropriately.
 *	Deleted null and duplicate values.
@@ -47,11 +48,13 @@ The first row of the data was used as headers using the option Use First Row as 
 ### HR Attrition Dashboard
 In Power BI, I used Visualizations to create five dashboards. The first dashboard about **HR Attrition** provides an overview of all four dashboards I created. This is shown in Figure 1.
 
+| Figure 1: HR Attrition Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/HR%20Attrition%20-%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure 1: HR Attrition Dashboard</figcaption>
+<!--   <figcaption>Figure 1: HR Attrition Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ### Demographics Dashboard
 The second dashboard about Demographics summarizes employee statistics, is shown in Figure 2. The following steps were performed. 
@@ -61,18 +64,20 @@ The second dashboard about Demographics summarizes employee statistics, is shown
 ```
 Attrition Count=SWITCH(true(),‘HR-Employee-Attrition’ [Attrition]=“Yes”,1,‘HR-Employee-Attrition’[Attrition]=“No”,0,0)
 ```
-Summing all the 1s gave a total of 237 attrition count. Then, subtracting this number from the employee count using the formula 
+Summing all the 1s gave a total of 237 attrition count. Then, subtract this number from the employee count using the formula 
 ```
 AE=SUM(‘HR-Employee-Attrition’ [EMployeeCount])- SUM(‘HR-Employee-Attrition’ [Attrition Count])
 ```
 This gave `1233` as the count of active employees.  
 4.	I used groups to aggregate certain values together to form meaningful subsets. These were done for Age (18-30, 31-45, 46-60), Work-Life Balance (1 as "Bad", 2 as "Average", 3 as "Good", and 4 as "Excellent"), and Distance From Home (1-10 as “Near-by”, 11-20 as “Far” and 21 – 29 as “Very far”).
 
+| Figure 2: Demographics Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Demographic%20-%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure 2: Demographics Dashboard</figcaption>
+<!--   <figcaption>Figure 2: Demographics Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ### Turnover Analysis I Dashboard
 The third and fourth dashboards about Turnover Analysis I and II contain details about employee attrition. The steps below were performed:
@@ -80,27 +85,31 @@ The third and fourth dashboards about Turnover Analysis I and II contain details
 2.	Created a stacked column chart for Total attrition by business travel.
 3.	Created a donut chart for Total attrition by the department.
 4.	Created a stacked column chart for Total attrition by years in the current role.
-5.	Created a Treemap for Total attrition by job role counting the total number of “Yes” attritions for each category.
+5.	Created a Treemap for Total attrition by job role, counting the total number of “Yes” attritions for each category.
 
+| Figure 3: Turnover Analysis I Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%201%20-%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure 3: Turnover Analysis I Dashboard</figcaption>
+<!--   <figcaption>Figure 3: Turnover Analysis I Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ### Turnover Analysis II Dashboard
-The fourth dashboard about Turnover Analysis II contains additional details about employee attrition. The dashboard is shown in Figure 4. I performed the steps below:
+The fourth dashboard, about Turnover Analysis II, contains additional details about employee attrition. The dashboard is shown in Figure 4. I performed the steps below:
 1.	Created a clustered column chart for total attrition by age and gender.
 2.	Created a pie chart for total attrition by performance and rating.
 3.	Created a stacked column chart for total attrition by overtime. To do this, I first grouped values: 1 for “Entry Level”, 2 for “Junior or Associate”, 3 for “Middle-level Specialist”, 4 for “Senior”, and 5 for “Executive”.
 4.	Created a funnel for total attrition by job level based on the groups from step 3.
 5.	Created a line chart for monthly income and attrition by job role.
 
+| Figure 4: Turnover Analysis II Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%202%20-%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure 3: Turnover Analysis II Dashboard</figcaption>
+<!--   <figcaption>Figure 3: Turnover Analysis II Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 ### Employee Wellness Dashboard
 The fifth dashboard about Employee Wellness focuses on employee satisfaction regarding several factors. Figure 5 presents the dashboard, which was built following the steps below:
@@ -110,11 +119,13 @@ The fifth dashboard about Employee Wellness focuses on employee satisfaction reg
 4.	Created a clustered column chart for Total attrition by performance rating. Performance rating was rated: 3 for “Low” and 4 for “High”.
 5.	Created a pie chart for total attrition by work-life balance. Note that on the work-life balance, 1 represents "Bad", 2 stands for "Average", 3 signifies "Good", and 4 indicates "Excellent".
 
+| Figure 5: Employee Wellness Dashboard |
+| :------------: |
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Employee%20Wellness%20-%20Dashboard.png" width=100% height=100% alt="alt text">
-  <figcaption>Figure 3: Employee Wellness Dashboard</figcaption>
+<!--   <figcaption>Figure 5: Employee Wellness Dashboard</figcaption> -->
 </figure>
-<br/><br/>
+<!-- <br/><br/> -->
 
 > [!NOTE]
 > In these dashboards, grouping played a crucial role in organizing and presenting data effectively. The design of the dashboards was tailored to utilize the power of grouping for enhanced data visualization and analysis.

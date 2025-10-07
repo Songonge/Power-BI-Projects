@@ -64,7 +64,8 @@ The analysis tool for this project focused on data analysis using Microsoft Powe
 The dataset used in this project was downloaded from Kaggle. It was made of three tables. 
 1. **airlines.csv**: This table contains two columns and 15 rows defined as follows: 
    * *IATA_CODE*: Identification of each airline
-   * *AIRLINE*: Name of the airline
+   * *AIRLINE*: Name of the airline  
+
 2. **airports.csv**: This table contains 7 columns and 323 rows defined as follows: 
    * *IATA_CODE*: The Identification of each airline
    * *AIRPORT*: Airport's name
@@ -72,7 +73,8 @@ The dataset used in this project was downloaded from Kaggle. It was made of thre
    * *STATE*: Name of the state of the airport, provided as an abbreviation
    * *COUNTRY*: Country Name of the Airport
    * *LATTITUDE*: Latitude of the Airport
-   * *LONGITUDE*: Longitude of the Airport
+   * *LONGITUDE*: Longitude of the Airport  
+
 3. **flights.csv**: This table contains 31 columns and more than 6 million rows. 
    * *YEAR*: Year of the Flight Trip
    * *MONTH*: Month of the Flight Trip
@@ -164,7 +166,7 @@ This step involves creating visuals and charts in Power BI to show a comprehensi
    * A Line chart to show both canceled and delayed flights by airport
    * Line charts to show total flights by month for On-Time, Delayed, and Canceled
    * A donut chart to show canceled flights for different cancellation reasons
-   * Column charts to show total flights by the percentage of Ontime by day, delayed flights by the percentage of delayed by day, and canceled flights by the percentage of canceled by day.
+   * Column charts to show total flights by the percentage of Ontime by day, delayed flights by the percentage of delays by day, and canceled flights by the percentage of cancellations by day.
    * A Stacked Bar chart to show the percentage of flights by status.
 2. Designed a dashboard by combining all the charts. The dashboard is shown in the following figure.
 
@@ -224,3 +226,4 @@ The following recommendations are provided to help airlines and airports enhance
 
 ### Author
 [Edwige Songong](https://github.com/Songonge)
+

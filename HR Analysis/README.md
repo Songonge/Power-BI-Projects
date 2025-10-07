@@ -135,7 +135,7 @@ The following insights were derived from the data analysis:
 *	Many employees rarely traveled.
 *	There was a correlation between the hourly rate and the daily rate.
 *	Concerning environmental satisfaction, employees living nearby accounted for the majority. These employees were also seen as more active and rarely traveled. On the other hand, Entry-level and Junior or Associate employees were noticeably satisfied with the environment and were mostly males.
-*	 Most of the jobs involvement fell under the Research & Development category. 
+*	 Most of the jobs involved fell under the Research & Development category. 
 *	The majority of employees were between 31 and 45 years old.
 *	Most employees who rated “Good” for Work-Life Balance were female.
 

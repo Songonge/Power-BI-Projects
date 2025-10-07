@@ -46,16 +46,16 @@ The following tools were used:
 
 
 ## Conclusion
-This project highlighted significant trends in budget allocation, expenses, and project performance. While the increasing investment in AI, Cloud Migration, and IoT Automation is promising, the high number of pending and cancelled projects suggests areas for 
+This project highlighted significant trends in budget allocation, expenses, and project performance. While the increasing investment in AI, Cloud Migration, and IoT Automation is promising, the high number of pending and canceled projects suggests areas for 
 process optimization. Key takeaways:  
 * The data underscores a period of rapid expansion.
 * Optimizing project execution and financial management will be crucial for sustaining long-term growth and efficiency.
-* Key challenges such as high-pending project volumes, substantial expenses in cloud migration, and a notable number of cancelled projects highlight areas requiring strategic intervention.
+* Key challenges such as high-pending project volumes, substantial expenses in cloud migration, and a notable number of canceled projects highlight areas requiring strategic intervention.
 * To maintain sustainable progress, optimizing project approval processes, improving budget efficiency, and mitigating unnecessary expenditures are essential.  
 
 By addressing these inefficiencies, the organization can ensure sustainable growth and improved project execution for long-term success.
 
 
-In case you would like to read more about this article, please do fill up the contact form available in my home page. 
+In case you would like to read more about this article, please fill up the contact form available on my homepage. 
 
 Thanks for reading....🤗👋

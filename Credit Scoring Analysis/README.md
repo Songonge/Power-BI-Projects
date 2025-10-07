@@ -124,7 +124,7 @@ SELECT *
 FROM [DataBeez].dbo.Project1;
 ```
 
-## Importing the Cleaned Data to Power BI to Analyse it  
+## Importing the Cleaned Data to Power BI to Analyze it  
 After launching Power BI, I connected to the data as follows:  
 * Clicked on Get Data under the Home tab within the Data group
 * Selected SQL Server from the list

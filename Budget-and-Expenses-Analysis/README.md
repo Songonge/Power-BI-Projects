@@ -10,7 +10,7 @@
 
 ## Introduction
 This project provides an in-depth review of project performance, budget allocation, and expenses. It analyzes various projects across multiple domains of technology, reflecting the organization’s strategic priorities. 
-The interactive dashboard presented here displays meaningful insights and provides recommendations for the company to excel.
+The interactive dashboard presented here provides meaningful insights and offers recommendations to help the company excel.
 
 ## Achieved Goals
 This report delves into the insights derived from the data visualization, identifying key trends and areas of focus for better decision-making. By analyzing key financial and operational metrics from the data, this report aims to:  

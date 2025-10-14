@@ -48,10 +48,10 @@ The first row of the data was used as headers using the option Use First Row as 
 ### HR Attrition Dashboard
 In Power BI, I used Visualizations to create five dashboards. The first dashboard about **HR Attrition** provides an overview of all four dashboards I created. This is shown in Figure 1.
 
-| Figure 1: HR Attrition Dashboard |
+| Figure 1: Overview Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/HR%20Attrition%20-%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Overview_Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure 1: HR Attrition Dashboard</figcaption> -->
 </figure>
 <!-- <br/><br/> -->
@@ -74,7 +74,7 @@ This gave `1233` as the count of active employees.
 | Figure 2: Demographics Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Demographic%20-%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Demographic_Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure 2: Demographics Dashboard</figcaption> -->
 </figure>
 <!-- <br/><br/> -->
@@ -90,7 +90,7 @@ The third and fourth dashboards about Turnover Analysis I and II contain details
 | Figure 3: Turnover Analysis I Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%201%20-%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%2_Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure 3: Turnover Analysis I Dashboard</figcaption> -->
 </figure>
 <!-- <br/><br/> -->
@@ -106,7 +106,7 @@ The fourth dashboard, about Turnover Analysis II, contains additional details ab
 | Figure 4: Turnover Analysis II Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%202%20-%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Turnover%20Analysis%202_Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure 3: Turnover Analysis II Dashboard</figcaption> -->
 </figure>
 <!-- <br/><br/> -->
@@ -122,7 +122,7 @@ The fifth dashboard about Employee Wellness focuses on employee satisfaction reg
 | Figure 5: Employee Wellness Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Employee%20Wellness%20-%20Dashboard.png" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/Employee%20Wellness_Dashboard.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure 5: Employee Wellness Dashboard</figcaption> -->
 </figure>
 <!-- <br/><br/> -->

@@ -2,18 +2,21 @@
 
 ## Table of Contents  
 1. [Introduction](#introduction)
-2. [Achieved Goals](#achieved-goals)
-3. [Steps to Complete this Project](#Steps-to-Complete-this-Project)
-4. [Required Tools for this Project](#Required-Tools-for-this-Project)
-5. [Conclusion](#Conclusion)
-
+2. [Requirements](#requirements)
+3. [Achieved Goals](#achieved-goals)
+4. [Steps to Complete this Project](#Steps-to-Complete-this-Project)
+5. [Required Tools for this Project](#Required-Tools-for-this-Project)
+6. [Conclusion](#Conclusion)
 
 ## Introduction
-This project provides an in-depth review of project performance, budget allocation, and expenses. It analyzes various projects across multiple domains of technology, reflecting the organization’s strategic priorities. 
+This project provides an in-depth review of project performance, budget allocation, and expenses. It analyzes various projects across multiple technology domains, reflecting the organization’s strategic priorities. 
 The interactive dashboard presented here provides meaningful insights and offers recommendations to help the company excel.
 
+## Requirements
+The client sought a clear overview of how their budget and expenses were distributed across projects, managers, clients, and days. After cleaning and transforming the dataset in SQL, I designed a single-page interactive dashboard to display all key financial metrics in one place. The data model was built to compare budgeted versus actual spending and to evaluate performance over multiple years.
+
 ## Achieved Goals
-This report delves into the insights derived from the data visualization, identifying key trends and areas of focus for better decision-making. By analyzing key financial and operational metrics from the data, this report aims to:  
+This report explores the insights gained from data visualization, identifying key trends and areas of focus to inform better decision-making. By analyzing key financial and operational metrics from the data, this report aims to:  
 * Identify budget and expense trends.
 * Assess project performance.
 * Highlight growth and challenges.
@@ -22,7 +25,7 @@ This report delves into the insights derived from the data visualization, identi
 | Figure: Budget and Expenses Analysis by Project Dashboard |
 | :------------: |
 <figure>
-  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.jpg" width=100% height=100% alt="alt text">
+  <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.png" width=100% height=100% alt="alt text">
 <!--   <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption> -->
 </figure>
 <!-- <br/><br/> -->

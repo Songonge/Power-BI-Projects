@@ -22,14 +22,12 @@ This report explores the insights gained from data visualization, identifying ke
 * Highlight growth and challenges.
 * Provide actionable insights.
 
-| Figure: Budget and Expenses Analysis by Project Dashboard |
-| :------------: |
+<!-- | Figure: Budget and Expenses Analysis by Project Dashboard |
+| :------------: | 
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.png" width=100% height=100% alt="alt text">
-<figcaption><div align="center">
-  Figure: Budget and Expenses Analysis by Project.
-</div></figcaption> 
-</figure>
+  <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption> 
+</figure> -->
 
 <div align="center">
 <figure>

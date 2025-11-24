@@ -32,7 +32,7 @@ This report explores the insights gained from data visualization, identifying ke
 <div align="center">
 <figure>
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.png" width=100% height=100% alt="alt text">
-  <figcaption><ins>**Figure**</ins>: Budget and Expenses Analysis by Project.</figcaption> 
+  <figcaption>**<ins>Figure</ins>**: Budget and Expenses Analysis by Project.</figcaption> 
 </figure>
 </div>
 

@@ -34,7 +34,7 @@ Figure: Budget and Expenses Analysis by Project Dashboard
   <img src="https://github.com/Songonge/Power-BI-Projects/blob/main/Budget-and-Expenses-Analysis/Budget_and_Expenses_Analysis.png" width=100% height=100% alt="alt text">
 <figcaption>Figure: Budget and Expenses Analysis by Project.</figcaption> </p>
   
-<center>Centered Figure: Budget and Expenses Analysis by Project.</center>
+<center>Figure: Budget and Expenses Analysis by Project.</center>
 
 ## Steps to Complete this Project
 The following steps were completed:  

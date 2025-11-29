@@ -72,62 +72,62 @@ The project was implemented using:
 ```sql
 Sales = SUM('Fact Sales'[Sales])
 ```
-```
+```sql
 Previous Year Sales = CALCULATE([Sales], SAMEPERIODLASTYEAR('Date Table'[Date]))
 ```
-```
+```sql
 YoY% Sales =
   VAR a = DIVIDE([Sales] - [PY Sales], [PY Sales])
   VAR b = FORMAT(a, "#0.0%")           
 RETURN
   IF(a > 0, "▲", "▼") & " " & b
 ```
-```
+```sql
 Color Sales = IF([Sales] > [PY Sales], "Green", "#D60000")
 ```
-```
+```sql
 Max Sales =
   VAR Max_Sales = MAXX(ALL('Date Table'[Monthnumber]), [Sales])
 RETURN
   IF([Sales] = Max_Sales, Max_Sales, BLANK()) 
 ```
-```
+```sql
 Color Sales Segment =
   VAR max_v = MAXX(ALL('Dim Customers'[Segment]), [Sales])
   VAR color_v = IF([Sales] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Sales Product =
   VAR max_v = MAXX(ALL('Dim Products'[Product Name]), [Sales])
   VAR color_v = IF([Sales] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Sales Product =
   VAR _max = MAXX(ALL('Dim Products'[Product Name]), [Sales])
  RETURN
   IF([Sales] = _max, _max, BLANK())
 ```
-```
+```sql
 Color Sales Category =
   VAR max_v = MAXX(ALL('Dim Products'[Category]), [Sales])
   VAR color_v = IF([Sales] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Sales Sub-Category =
   VAR max_v = MAXX(ALL('Dim Products'[Sub-Category]), [Sales])
   VAR color_v = IF([Sales] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Sales Customers =
   VAR max_v = MAXX(ALL('Dim Customers'[Customer Name]), [Sales])
   VAR color_v = IF([Sales] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Sales Customer =
   VAR _max = MAXX(ALL('Dim Customers'[Customer Name]), [Sales])
 RETURN
@@ -171,65 +171,65 @@ RETURN
  
 ## B. Profit Analysis
 ### 1. DAX Measures
-```
+```sql
 Profit = SUM('Fact Sales'[Profit])
 ```
-```
+```sql
 Previous Year Profit = CALCULATE([Profit], SAMEPERIODLASTYEAR('Date Table'[Date]))
 ```
-```
+```sql
 YoY% Profit =
   VAR a = DIVIDE([Profit] - [PY Profit], [PY Profit])
   VAR b = FORMAT(a, "#0.0%")           
 RETURN
   IF(a > 0, "▲", "▼") & " " & b
 ```
-```
+```sql
 Color Profit = IF([Profit] > [PY Profit], "Green", "#D60000")
 ```
-```
+```sql
 Max Profit =
   VAR Max_Profit = MAXX(ALL('Date Table'[Monthnumber]), [Profit])
 RETURN
   IF([Profit] = Max_Profit, Max_Profit, BLANK()) 
 ```
-```
+```sql
 Color Profit Segment =
   VAR max_v = MAXX(ALL('Dim Customers'[Segment]), [Profit])
   VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Profit Product =
   VAR max_v = MAXX(ALL('Dim Products'[Product Name]), [Profit])
   VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Profit Product =
   VAR _max = MAXX(ALL('Dim Products'[Product Name]), [Profit])
  RETURN
   IF([Profit] = _max, _max, BLANK())
 ```
-```
+```sql
 Color Profit Category =
   VAR max_v = MAXX(ALL('Dim Products'[Category]), [Profit])
   VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Profit Sub-Category =
   VAR max_v = MAXX(ALL('Dim Products'[Sub-Category]), [Profit])
   VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Profit Customers =
   VAR max_v = MAXX(ALL('Dim Customers'[Customer Name]), [Profit])
   VAR color_v = IF([Profit] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Profit Customer =
   VAR _max = MAXX(ALL('Dim Customers'[Customer Name]), [Profit])
 RETURN
@@ -274,65 +274,65 @@ RETURN
 
 ## C. Orders Analysis
 ### 1. DAX Measures
-```
+```sql
 Orders = SUM('Fact Sales'[Orders])
 ```
-```
+```sql
 Previous Year Orders = CALCULATE([Orders], SAMEPERIODLASTYEAR('Date Table'[Date]))
 ```
-```
+```sql
 YoY% Orders =
   VAR a = DIVIDE([Orders] - [PY Orders], [PY Orders])
   VAR b = FORMAT(a, "#0.0%")           
 RETURN
   IF(a > 0, "▲", "▼") & " " & b
 ```
-```
+```sql
 Color Orders = IF([Orders] > [PY Orders], "Green", "#D60000")
 ```
-```
+```sql
 Max Orders =
   VAR Max_Orders = MAXX(ALL('Date Table'[Monthnumber]), [Orders])
 RETURN
   IF([Orders] = Max_Orders, Max_Orders, BLANK()) 
 ```
-```
+```sql
 Color Orders Segment =
   VAR max_v = MAXX(ALL('Dim Customers'[Segment]), [Orders])
   VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Orders Product =
   VAR max_v = MAXX(ALL('Dim Products'[Product Name]), [Orders])
   VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Orders Product =
   VAR _max = MAXX(ALL('Dim Products'[Product Name]), [Orders])
  RETURN
   IF([Orders] = _max, _max, BLANK())
 ```
-```
+```sql
 Color Orders Category =
   VAR max_v = MAXX(ALL('Dim Products'[Category]), [Orders])
   VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Orders Sub-Category =
   VAR max_v = MAXX(ALL('Dim Products'[Sub-Category]), [Orders])
   VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Color Orders Customers =
   VAR max_v = MAXX(ALL('Dim Customers'[Customer Name]), [Orders])
   VAR color_v = IF([Orders] = max_v, "#6B9DFE", "#DDE4F2")
 RETURN color_v
 ```
-```
+```sql
 Max Orders Customer =
   VAR _max = MAXX(ALL('Dim Customers'[Customer Name]), [Orders])
 RETURN

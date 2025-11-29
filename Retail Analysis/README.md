@@ -69,7 +69,7 @@ The project was implemented using:
 
 ## A. Sales Analysis
 ### 1. DAX Measures
-```dax
+```sql
 Sales = SUM('Fact Sales'[Sales])
 ```
 ```
